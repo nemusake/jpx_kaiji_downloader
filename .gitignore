@@ -78,3 +78,8 @@ data/**/*.json
 # Downloads archives (exclude large zip)
 downloads/*.zip
 downloads/**/*.zip
+
+# WindowsのZone.Identifier派生ファイルを無視（WSL/Windows間コピーで混入することがある）
+*:Zone.Identifier
+*.Zone.Identifier
+Zone.Identifier
