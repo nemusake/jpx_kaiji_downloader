@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/jptyf/workspace/jpx_kaiji_service/output/html_summary.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1724"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,12:mainhtml_summary"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="html_summary" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="83"/><column index="2" value="106"/><column index="3" value="49"/><column index="4" value="117"/><column index="5" value="116"/><column index="6" value="126"/><column index="7" value="179"/><column index="8" value="104"/><column index="9" value="46"/><column index="10" value="76"/><column index="11" value="41"/><column index="12" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 4">SELECT
+	*
+FROM
+	html_summary</sql><sql name="9factor">SELECT
+	date,
+	code,
+	company_name,
+	fiscal_year_end,
+	quarterly_period,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:NetSales' THEN CAST(value AS NUMERIC) END) AS net_sales,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:NetSalesIFRS' THEN CAST(value AS NUMERIC) END) AS net_salesIFRS,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:OperatingIncome' THEN CAST(value AS NUMERIC) END) AS operatingincome,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:OperatingIncomeIFRS' THEN CAST(value AS NUMERIC) END) AS operatingincome_ifrs,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:OrdinaryIncome' THEN CAST(value AS NUMERIC) END) AS ordinary_income,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:ProfitBeforeTaxIFRS' THEN CAST(value AS NUMERIC) END) AS profitbeforetax_ifrs,	
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:NetAssets' THEN CAST(value AS NUMERIC) END) AS net_assets,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:TotalEquityIFRS' THEN CAST(value AS NUMERIC) END) AS totalequity_ifrs,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromOperatingActivities' THEN CAST(value AS NUMERIC) END) AS cashflow_o,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromInvestingActivities' THEN CAST(value AS NUMERIC) END) AS cashflow_i,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromFinancingActivities' THEN CAST(value AS NUMERIC) END) AS cashflow_f,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashAndEquivalentsEndOfPeriod' THEN CAST(value AS NUMERIC) END) AS cash_end,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromOperatingActivitiesIFRS' THEN CAST(value AS NUMERIC) END) AS cashflow_o_ifrs,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromInvestingActivitiesIFRS' THEN CAST(value AS NUMERIC) END) AS cashflow_i_ifrs,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromFinancingActivitiesIFRS' THEN CAST(value AS NUMERIC) END) AS cashflow_f_ifrs,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:CashAndCashEquivalentsAtEndOfPeriodIFRS' THEN CAST(value AS NUMERIC) END) AS cash_end_ifrs,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:NumberOfIssuedAndOutstandingSharesAtTheEndOfFiscalYearIncludingTreasuryStock' THEN CAST(value AS NUMERIC) END) AS outstanding_shares,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:NumberOfTreasuryStockAtTheEndOfFiscalYear' THEN CAST(value AS NUMERIC) END) AS treasury_shares,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:DividendPerShare' THEN CAST(value AS NUMERIC) END) AS dividend_per_share,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:TotalDividendPaidAnnual' THEN CAST(value AS NUMERIC) END) AS total_dividend_annual,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:PayoutRatio' THEN CAST(value AS NUMERIC) END) AS payout_ratio,
+	MAX(CASE WHEN factor_tag = 'tse-ed-t:DocumentName' THEN CAST(value AS NUMERIC) END) AS doc_name
+FROM
+	html_summary
+WHERE
+	factor_tag
+	IN
+	(
+	'tse-ed-t:NetAssets',
+	'tse-ed-t:NetSales',
+	'tse-ed-t:OperatingIncome',
+	'tse-ed-t:OperatingIncomeIFRS',
+	'tse-ed-t:OrdinaryIncome',
+	'tse-ed-t:ProfitBeforeTaxIFRS',
+	'tse-ed-t:NetAssets',
+	'tse-ed-t:TotalEquityIFRS',
+	'tse-ed-t:CashFlowsFromOperatingActivities',
+	'tse-ed-t:CashFlowsFromInvestingActivities',
+	'tse-ed-t:CashFlowsFromFinancingActivities',
+	'tse-ed-t:CashAndEquivalentsEndOfPeriod',
+	'tse-ed-t:CashFlowsFromOperatingActivitiesIFRS',
+	'tse-ed-t:CashFlowsFromInvestingActivitiesIFRS',
+	'tse-ed-t:CashFlowsFromFinancingActivitiesIFRS',
+	'tse-ed-t:CashAndCashEquivalentsAtEndOfPeriodIFRS',
+	'tse-ed-t:NumberOfIssuedAndOutstandingSharesAtTheEndOfFiscalYearIncludingTreasuryStock',
+	'tse-ed-t:NumberOfTreasuryStockAtTheEndOfFiscalYear',
+	'tse-ed-t:DividendPerShare',
+	'tse-ed-t:TotalDividendPaidAnnual',
+	'tse-ed-t:PayoutRatio',
+	'tse-ed-t:DocumentName'
+	)
+    AND
+	typeof(value)
+	IN
+	(
+	'integer',
+	'real'
+	)  -- 数値データのみ
+GROUP BY
+	date,
+	code,
+	company_name,
+	fiscal_year_end,
+	quarterly_period
+ORDER BY
+	code ASC,
+	date DESC</sql><sql name="9factor_cleansing">-- 修正決算を除去して最初の発表データのみを取得するクエリ
+-- 営業利益（OperatingIncome, OperatingIncomeIFRS）を含む
+
+WITH RankedData AS (
+    SELECT
+        date,
+        code,
+        company_name,
+        fiscal_year_end,
+        quarterly_period,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:NetSales' THEN CAST(value AS NUMERIC) END) AS net_sales,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:NetSalesIFRS' THEN CAST(value AS NUMERIC) END) AS net_salesIFRS,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:OperatingIncome' THEN CAST(value AS NUMERIC) END) AS operatingincome,
+		MAX(CASE WHEN factor_tag = 'tse-ed-t:TotalRevenuesAfterDeductingFinancialExpenseUS' THEN CAST(value AS NUMERIC) END) AS financialexpense_us,
+		MAX(CASE WHEN factor_tag = 'tse-ed-t:OperatingIncomeUS' THEN CAST(value AS NUMERIC) END) AS operatingincome_us,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:OperatingIncomeIFRS' THEN CAST(value AS NUMERIC) END) AS operatingincome_ifrs,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:OrdinaryIncome' THEN CAST(value AS NUMERIC) END) AS ordinary_income,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:ProfitBeforeTaxIFRS' THEN CAST(value AS NUMERIC) END) AS profitbeforetax_ifrs,    
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:NetAssets' THEN CAST(value AS NUMERIC) END) AS net_assets,
+		MAX(CASE WHEN factor_tag = 'tse-ed-t:NetAssetsUS' THEN CAST(value AS NUMERIC) END) AS net_assets_us,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:TotalEquityIFRS' THEN CAST(value AS NUMERIC) END) AS totalequity_ifrs,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromOperatingActivities' THEN CAST(value AS NUMERIC) END) AS cashflow_o,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromInvestingActivities' THEN CAST(value AS NUMERIC) END) AS cashflow_i,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromFinancingActivities' THEN CAST(value AS NUMERIC) END) AS cashflow_f,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashAndEquivalentsEndOfPeriod' THEN CAST(value AS NUMERIC) END) AS cash_end,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromOperatingActivitiesIFRS' THEN CAST(value AS NUMERIC) END) AS cashflow_o_ifrs,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromInvestingActivitiesIFRS' THEN CAST(value AS NUMERIC) END) AS cashflow_i_ifrs,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashFlowsFromFinancingActivitiesIFRS' THEN CAST(value AS NUMERIC) END) AS cashflow_f_ifrs,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:CashAndCashEquivalentsAtEndOfPeriodIFRS' THEN CAST(value AS NUMERIC) END) AS cash_end_ifrs,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:NumberOfIssuedAndOutstandingSharesAtTheEndOfFiscalYearIncludingTreasuryStock' THEN CAST(value AS NUMERIC) END) AS outstanding_shares,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:NumberOfTreasuryStockAtTheEndOfFiscalYear' THEN CAST(value AS NUMERIC) END) AS treasury_shares,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:DividendPerShare' THEN CAST(value AS NUMERIC) END) AS dividend_per_share,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:TotalDividendPaidAnnual' THEN CAST(value AS NUMERIC) END) AS total_dividend_annual,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:PayoutRatio' THEN CAST(value AS NUMERIC) END) AS payout_ratio,
+        MAX(CASE WHEN factor_tag = 'tse-ed-t:DocumentName' THEN value END) AS doc_name,
+        ROW_NUMBER() OVER (
+            PARTITION BY code, fiscal_year_end, quarterly_period 
+            ORDER BY date ASC
+        ) as rn
+    FROM
+        html_summary
+    WHERE
+        factor_tag
+        IN
+        (
+        'tse-ed-t:NetSales',
+        'tse-ed-t:NetSalesIFRS',
+        'tse-ed-t:OperatingIncome',
+		'tse-ed-t:TotalRevenuesAfterDeductingFinancialExpenseUS',
+		'tse-ed-t:OperatingIncomeUS',
+        'tse-ed-t:OperatingIncomeIFRS',
+        'tse-ed-t:OrdinaryIncome',
+        'tse-ed-t:ProfitBeforeTaxIFRS',
+		'tse-ed-t:NetAssets',
+		'tse-ed-t:NetAssetsUS',
+        'tse-ed-t:TotalEquityIFRS',
+        'tse-ed-t:CashFlowsFromOperatingActivities',
+        'tse-ed-t:CashFlowsFromInvestingActivities',
+        'tse-ed-t:CashFlowsFromFinancingActivities',
+        'tse-ed-t:CashAndEquivalentsEndOfPeriod',
+        'tse-ed-t:CashFlowsFromOperatingActivitiesIFRS',
+        'tse-ed-t:CashFlowsFromInvestingActivitiesIFRS',
+        'tse-ed-t:CashFlowsFromFinancingActivitiesIFRS',
+        'tse-ed-t:CashAndCashEquivalentsAtEndOfPeriodIFRS',
+        'tse-ed-t:NumberOfIssuedAndOutstandingSharesAtTheEndOfFiscalYearIncludingTreasuryStock',
+        'tse-ed-t:NumberOfTreasuryStockAtTheEndOfFiscalYear',
+        'tse-ed-t:DividendPerShare',
+        'tse-ed-t:TotalDividendPaidAnnual',
+        'tse-ed-t:PayoutRatio',
+        'tse-ed-t:DocumentName'
+        )
+        AND
+        (typeof(value) IN ('integer', 'real') OR factor_tag = 'tse-ed-t:DocumentName')  -- 数値データとDocumentName
+    GROUP BY
+        date,
+        code,
+        company_name,
+        fiscal_year_end,
+        quarterly_period
+)
+SELECT 
+    date,
+    code,
+    company_name,
+    fiscal_year_end,
+    quarterly_period,
+    net_sales,
+    net_salesIFRS,
+    operatingincome,
+	financialexpense_us,
+	operatingincome_us,
+    operatingincome_ifrs,
+    ordinary_income,
+    profitbeforetax_ifrs,
+    net_assets,
+	net_assets_us,
+    totalequity_ifrs,
+    cashflow_o,
+    cashflow_i,
+    cashflow_f,
+    cash_end,
+    cashflow_o_ifrs,
+    cashflow_i_ifrs,
+    cashflow_f_ifrs,
+    cash_end_ifrs,
+    outstanding_shares,
+    treasury_shares,
+    dividend_per_share,
+    total_dividend_annual,
+    payout_ratio,
+    doc_name
+FROM RankedData
+WHERE rn = 1
+ORDER BY
+    code ASC,
+    date DESC</sql><current_tab id="2"/></tab_sql></sqlb_project>

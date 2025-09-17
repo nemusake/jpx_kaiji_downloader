@@ -1,0 +1,232 @@
+﻿xbrl_tag,japanese_name,english_name,category,accounting_standard,sample_value,unit,description,occurrence_detail
+tse-ed-t:DocumentName,文書名,Document_Name,基本情報,"日本基準, IFRS","第１四半期決算短信〔日本基準〕(連結), 第１四半期決算短信〔日本基準〕（連結）, 第1四半期決算短信〔日本基準〕（連結）",,提出する決算短信等の文書名,1677/1677
+tse-ed-t:FilingDate,提出日,Filing_Date,基本情報,"日本基準, IFRS","2025年８月７日, 2025年８月12日, 2025年８月５日",,決算短信等を提出した日付,1677/1677
+tse-ed-t:CompanyName,会社名,Company_Name,基本情報,"日本基準, IFRS","五洋建設株式会社, サンフロンティア不動産株式会社, 冨士ダイス株式会社",,上場会社の正式名称,1677/1677
+tse-ed-t:TokyoStockExchange,東京証券取引所,Tokyo_Stock_Exchange,基本情報,"日本基準, IFRS",東,,東京証券取引所への上場の有無,1677/1677
+tse-ed-t:NagoyaStockExchange,名古屋証券取引所,Nagoya_Stock_Exchange,基本情報,"日本基準, IFRS",名,,名古屋証券取引所への上場の有無,1677/1677
+tse-ed-t:SapporoStockExchange,札幌証券取引所,Sapporo_Stock_Exchange,基本情報,"日本基準, IFRS",札,,札幌証券取引所への上場の有無,1677/1677
+tse-ed-t:FukuokaStockExchange,福岡証券取引所,Fukuoka_Stock_Exchange,基本情報,"日本基準, IFRS",福,,福岡証券取引所への上場の有無,1677/1677
+tse-ed-t:JapanSecuritiesDealersAssociation,日本証券業協会,Japan_Securities_Dealers_Association,基本情報,"日本基準, IFRS",,,日本証券業協会への登録の有無,1677/1677
+tse-ed-t:SecuritiesCode,証券コード,Securities_Code,基本情報,"日本基準, IFRS","18930, 89340, 61670",,上場企業に割り当てられた4桁の証券識別コード,1677/1677
+tse-ed-t:TitleRepresentative,代表者役職,Title_of_Representative,基本情報,"日本基準, IFRS","代表取締役社長, 取締役社長, 代表取締役社長ＣＥＯ",,代表取締役等の代表者の役職名,1677/1677
+tse-ed-t:NameRepresentative,代表者氏名,Name_of_Representative,基本情報,"日本基準, IFRS","清水　琢三, 齋藤清一, 春田　善和",,代表者の氏名,1677/1677
+tse-ed-t:NotesForUsingForecastedInformationAndOthers,業績予想等の利用に関する注記,Notes_for_Using_Forecasted_Information_and_Others,その他,"日本基準, IFRS","１．2025年５月９日に公表いたしました連結業績予想の修正は行っておりません。２．本資料に記載されている業績予想等の将来に関する記述は、当社が現在入手している情報および合理的であると判断する一定の前提に基づいており、その達成を当社として約束する趣旨のものではありません。また、実際の業績等は様々な要因により大きく異なる可能性があります。業績予想の前提となる条件および業績予想のご利用にあたっての注意事項等については、添付資料３ページ「１.経営成績等の概況（３）連結業績予想などの将来予測情報に関する説明」をご覧ください。, ・2026年３月期連結業績予想の１株あたり当期純利益は、期中平均株式数48,532,193株により算出しております。・本資料に記載されている業績見通し等の将来に関する記述は、当社が現在入手している情報及び合理的であると判断する一定の前提に基づいており、その達成を当社として約束する趣旨のものではありません。また、実際の業績等は様々な要因により大きく異なる可能性がございます。業績予想の前提となる条件及び業績予想のご利用にあたっての注意事項等については、添付資料７ページ「１．（３）連結業績予想などの将来予測情報に関する説明」をご覧ください。, 本資料に記載されている業績見通し等の将来に関する記述は、当社が現時点で入手している情報及び合理的であると判断する前提に基づいたものであり、その達成を当社として約束する趣旨のものではありません。また、実際の業績等は様々な要因により大きく異なる可能性があります。業績予想の前提となる条件及び業績予想のご利用にあたっての注意事項等については、添付資料３ページ「１．経営成績等の概況（３）連結業績予想などの将来予測情報に関する説明」をご覧ください。",,業績予想の利用上の注意点や免責事項,1677/1677
+tse-ed-t:TokyoStockExchangePrime,東京証券取引所プライム市場,Tokyo_Stock_Exchange_Prime,基本情報,"日本基準, IFRS","true, false",,東京証券取引所のプライム市場への上場状況,1677/1677
+tse-ed-t:TokyoStockExchangeStandard,東京証券取引所スタンダード市場,Tokyo_Stock_Exchange_Standard,基本情報,"日本基準, IFRS","false, true",,東京証券取引所のスタンダード市場への上場状況,1677/1677
+tse-ed-t:TokyoStockExchangeGrowth,東京証券取引所グロース市場,Tokyo_Stock_Exchange_Growth,基本情報,"日本基準, IFRS","false, true",,東京証券取引所のグロース市場への上場状況,1677/1677
+tse-ed-t:TokyoStockExchangePROMarket,東京証券取引所PRO市場,Tokyo_Stock_Exchange_PRO_Market,基本情報,"日本基準, IFRS",false,,東京証券取引所のTOKYO PRO Market への上場状況,1677/1677
+tse-ed-t:TokyoStockExchangeOthers,東京証券取引所その他,Tokyo_Stock_Exchange_Others,基本情報,"日本基準, IFRS",false,,東京証券取引所のその他市場区分への上場状況,1677/1677
+tse-ed-t:NagoyaStockExchange1stSection,名古屋証券取引所本則市場,Nagoya_Stock_Exchange_1st_Section,基本情報,"日本基準, IFRS","true, false",,名古屋証券取引所本則市場への上場状況,1677/1677
+tse-ed-t:NagoyaStockExchange2ndSection,名古屋証券取引所セントレックス,Nagoya_Stock_Exchange_2nd_Section,基本情報,"日本基準, IFRS","false, true",,名古屋証券取引所第二部への上場状況,1677/1677
+tse-ed-t:NagoyaStockExchangeCentrex,名古屋証券取引所Centrex,Nagoya_Stock_Exchange_Centrex,基本情報,"日本基準, IFRS",false,,名古屋証券取引所Centrexへの上場状況,1677/1677
+tse-ed-t:NagoyaStockExchangeOthers,名古屋証券取引所その他,Nagoya_Stock_Exchange_Others,基本情報,"日本基準, IFRS",false,,名古屋証券取引所のその他市場区分への上場状況,1677/1677
+tse-ed-t:SapporoStockExchangeEstablished,札幌証券取引所一般市場,Sapporo_Stock_Exchange_Established,基本情報,"日本基準, IFRS","false, true",,札幌証券取引所一般市場への上場状況,1677/1677
+tse-ed-t:SapporoStockExchangeAmbitious,札幌証券取引所アンビシャス,Sapporo_Stock_Exchange_Ambitious,基本情報,"日本基準, IFRS",false,,札幌証券取引所アンビシャス市場への上場状況,1677/1677
+tse-ed-t:SapporoStockExchangeOthers,札幌証券取引所その他,Sapporo_Stock_Exchange_Others,基本情報,"日本基準, IFRS",false,,札幌証券取引所のその他市場区分への上場状況,1677/1677
+tse-ed-t:FukuokaStockExchangeEstablished,福岡証券取引所一般市場,Fukuoka_Stock_Exchange_Established,基本情報,"日本基準, IFRS","false, true",,福岡証券取引所一般市場への上場状況,1677/1677
+tse-ed-t:FukuokaStockExchangeQBoard,福岡証券取引所Q-Board,Fukuoka_Stock_Exchange_Q-Board,基本情報,"日本基準, IFRS",false,,福岡証券取引所Q-Boardへの上場状況,1677/1677
+tse-ed-t:FukuokaStockExchangeOthers,福岡証券取引所その他,Fukuoka_Stock_Exchange_Others,基本情報,"日本基準, IFRS",false,,福岡証券取引所のその他市場区分への上場状況,1677/1677
+tse-ed-t:JapanSecuritiesDealersAssociationGreenSheet,日本証券業協会グリーンシート,Japan_Securities_Dealers_Association_Green_Sheet,基本情報,"日本基準, IFRS",false,,日本証券業協会グリーンシートへの登録状況,1677/1677
+tse-ed-t:GeneralBusiness,一般事業,General_Business,その他,"日本基準, IFRS","true, false",,会社の主たる事業内容の概要,1677/1677
+tse-ed-t:SpecificBusiness,特定事業,Specific_Business,その他,"日本基準, IFRS","false, true",,特定の業界に該当する事業の内容,1677/1677
+tse-ed-t:FiscalYearEnd,決算期,Fiscal_Year_End,その他,"日本基準, IFRS","2026-03-31, 2025-12-31, 2025-11-30",,会社の事業年度末月日,1677/1677
+tse-ed-t:DividendPerShare,1株当たり配当金,Dividend_Per_Share,指標,"日本基準, IFRS","12.00, 24.00, 17.00",JPYPerShares,株主に支払われる1株当たりの配当金額,1677/1677
+tse-ed-t:NumberOfIssuedAndOutstandingSharesAtTheEndOfFiscalYearIncludingTreasuryStock,期末発行済株式数（自己株式含む）,Number_of_Issued_and_Outstanding_Shares_at_The_End_of_Fiscal_Year_Including_Treasury_Stock,その他,"日本基準, IFRS","286,013,910, 48,755,500, 20,000,000",Shares,期末時点での発行済株式数（自己株式を含む）,1677/1677
+tse-ed-t:NumberOfTreasuryStockAtTheEndOfFiscalYear,期末自己株式数,Number_of_Treasury_Stock_at_The_End_of_Fiscal_Year,その他,"日本基準, IFRS","8,641,861, 4,204,061, 265,447",Shares,期末時点で会社が保有する自己株式数,1677/1677
+tse-ed-t:AverageNumberOfShares,期中平均株式数,Average_Number_of_Shares,その他,"日本基準, IFRS","280,132,174, 283,741,349, 48,532,193",Shares,期中の平均的な発行済株式数（1株当たり利益の計算に使用）,1677/1677
+tse-ed-t:FASFMemberMark,FASF加盟マーク,FASF_Member_Mark,その他,"日本基準, IFRS",,,財務会計基準機構（FASF）の加盟を示すマーク,1676/1677
+tse-ed-t:URL,URL,URL,基本情報,"日本基準, IFRS","https://www.penta-ocean.co.jp, https://www.sunfrt.co.jp, https://www.fujidie.co.jp/",,会社のウェブサイトのURL,1676/1677
+tse-ed-t:TitleInquiries,問合せ先責任者役職,Title_of_Inquiries_Contact,基本情報,"日本基準, IFRS","経営管理本部経理部長, 上席執行役員経営企画部長, 取締役業務本部長",,IR担当者等の問合せ先責任者の役職名,1676/1677
+tse-ed-t:NameInquiries,問合せ先責任者氏名,Name_of_Inquiries_Contact,基本情報,"日本基準, IFRS","佐々木　努, 平原健志, 高安　真生",,問合せ先責任者の氏名,1676/1677
+tse-ed-t:NoteToFractionProcessingMethod,端数処理方法に関する注記,Note_to_Fraction_Processing_Method,その他,"日本基準, IFRS","(百万円未満切捨て), (百万円未満切捨て）, （百万円未満切捨て）",,金額の端数処理（四捨五入・切り捨て等）の方法,1676/1677
+tse-ed-t:TitleForForecasts,業績予想に関するタイトル,Title_for_Forecasts,その他,"日本基準, IFRS","３．2026年３月期の連結業績予想（2025年４月１日～2026年３月31日）, 3. 2026年 3月期の連結業績予想（2025年 4月 1日～2026年 3月31日）, ３．2026年３月期の連結業績予想（2025年４月1日～2026年３月31日）",,業績予想セクションのタイトル,1674/1677
+tse-ed-t:PreambleToForecasts,業績予想に関する前文,Preamble_to_Forecasts,その他,"日本基準, IFRS","連結業績予想の修正については、本日（2025年８月５日）公表いたしました「2026年３月期通期連結業績予想の修正に関するお知らせ」をご覧ください。（参考）のれん等償却前営業利益　33,000百万円（6.2％）, 2026年３月期の連結業績予想については、柏崎刈羽原子力発電所の再稼働時期を見通せないことから、現時点で売上高・営業損益・経常損益・親会社株主に帰属する当期純損益ともに未定としております。今後、業績見通しがお示しできる状況となった段階で、速やかにお知らせいたします。, 2025年７月15日付で公表いたしました「株式会社 BCJ-98による当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ」に記載のとおり、当社株式は所定の手続を経て上場廃止となる予定であることから、2026年３月期の業績予想は記載しておりません。",,業績予想の前提条件等を説明する前文,1674/1677
+tse-ed-t:Tel,電話番号,Telephone_Number,基本情報,"日本基準, IFRS","(03)3817-7619, 03-5521-1301, 03-3759-7182",,会社の代表電話番号,1673/1677
+tse-ed-t:NoteToForecasts,業績予想に関する注記,Note_to_Forecasts,その他,"日本基準, IFRS","連結業績予想の修正については、本日（2025年８月５日）公表いたしました「2026年３月期通期連結業績予想の修正に関するお知らせ」をご覧ください。（参考）のれん等償却前営業利益　33,000百万円（6.2％）, 当社は賃貸事業を中心とした安定的な事業構造を有していますが、販売用不動産の売買動向によっては、営業収益（売上高）が大きく変動いたします。この物件売買の成否は経済情勢や不動産市況に大きく影響を受ける状況にあり、現状では予測が困難であるため、営業収益の予想は記載しておりません。予測が可能となった時点で速やかに開示いたします。, ２　当社は、2025年５月９日開催の取締役会において自己株式の取得に係る事項について、2025年６月10日開催の取締役会において自己株式の消却について、それぞれ決議をいたしました。これに伴い、連結業績予想の「１株当たり当期純利益」については、自己株式取得及び消却の影響を考慮しております。３　当社は、2025年10月１日を効力発生日として普通株式１株につき４株の割合で株式分割を行う予定です。連結業績予想の「１株当たり当期純利益」については、当該株式分割の影響を考慮しております。",,業績予想に関する補足説明や注意事項,1650/1677
+tse-ed-t:WayOfGettingSupplementalMaterialOfResults,決算補足説明資料の入手方法,Way_of_Getting_Supplemental_Material_of_Results,その他,"日本基準, IFRS","https://corp.itmedia.co.jp/ir/, （2025年８月７日（木）に当社ホームページに掲載予定）, 決算補足説明資料は決算短信に添付しております。",,決算補足資料を入手する方法の説明,1592/1677
+tse-ed-t:QuarterlyPeriod,四半期,Quarterly_Period,その他,"日本基準, IFRS","1, 2, 3",Pure,報告対象となる四半期の期間,1592/1677
+tse-ed-t:SupplementalMaterialOfResults,決算補足説明資料,Supplemental_Material_of_Results,その他,"日本基準, IFRS","有, 無",,決算説明のための補足資料の作成有無,1591/1677
+tse-ed-t:ConveningBriefingOfResults,決算説明会開催の有無,Convening_Briefing_of_Results,その他,"日本基準, IFRS","有, 無",,決算説明会を開催するかどうか,1590/1677
+tse-ed-t:TargetForBriefingOfResults,決算説明会の対象,Target_for_Briefing_of_Results,その他,"日本基準, IFRS","機関投資家、アナリスト向け, （機関投資家、アナリスト向け）, （機関投資家・アナリスト向け）",,決算説明会の参加対象者（アナリスト・機関投資家等）,1590/1677
+tse-ed-t:CorrectionOfDividendForecastInThisQuarter,当四半期の配当予想の修正,Correction_of_Dividend_Forecast_in_This_Quarter,指標,"日本基準, IFRS","無, 有",,四半期中に配当予想を修正した場合の記載,1576/1677
+tse-ed-t:NoteToNumberOfIssuedAndOutstandingSharesCommonStock,発行済株式数に関する注記,Note_to_Number_of_Issued_and_Outstanding_Shares_Common_Stock,その他,"日本基準, IFRS","（注）期末自己株式数および期中平均株式数の算定上控除する自己株式数には、株式給付信託（ＢＢＴ）にかかる信託口が保有する当社株式が含まれております。, （注）2026年３月期第１四半期の自己株式数は、譲渡制限付株式報酬制度の任期途中の退職に伴う無償譲受により取得した自己株式331株、譲渡制限付株式を交付するために取得した自己株式92,500株を株式数を含んでおります。, (注)１．株式給付信託（Ｊ－ＥＳＯＰ）が保有する当社株式（2026年３月期１Ｑ：84,760株、2025年３月期：87,500株）及び役員向け株式交付信託が保有する当社株式（2026年３月期１Ｑ：218,800株、2025年３月期：218,800株）を自己株式に含めて記載しております。(注)２．2025年４月１日付で普通株式１株につき２株の割合で株式分割を行っております。前連結会計年度の期首に当該株式分割が行われたと仮定して、発行済株式数（普通株式）を算定しております。",,発行済株式数の算定方法や変動に関する説明,1572/1677
+tse-ed-t:NoteToOperatingResults,業績に関する注記,Note_to_Operating_Results,PL,"日本基準, IFRS","（参考）のれん等償却前営業利益　2026年３月期第１四半期　 8,257百万円(△14.7％)2025年３月期第１四半期　 9,679百万円(△24.6％)当社は、経営上の重要な指標として、のれん等償却前営業利益を用いております。, (注) 2025年４月１日付で普通株式１株につき２株の割合で株式分割を行っております。前連結会計年度の期首に当該株式分割が行われたと仮定して、１株当たり四半期純利益を算定しております。, (注)当社は、2025年４月１日付で普通株式１株につき２株の割合で株式分割を行っております。前連結会計年度の期首に当該株式分割が行われたと仮定して、１株当たり四半期純利益金額及び潜在株式調整後１株当たり四半期純利益金額を算定しております。",,業績の要因分析や特殊要因に関する説明,1564/1677
+tse-ed-t:NoteToDividends,配当に関する注記,Note_to_Dividends,指標,"日本基準, IFRS","(注)２．2025年４月１日付で普通株式１株につき２株の割合で株式分割を行っております。2025年３月期については、当該株式分割前の実際の配当金の額を記載しております。2026年３月期(予想)については、当該株式分割の影響を考慮した金額を記載しております。, 2025年３月期配当金の内訳　普通配当　168円00銭　記念配当　30円00銭（創業50周年記念配当）, ２　当社は、2025年10月１日を効力発生日として普通株式１株につき４株の割合で株式分割を行う予定であるため、2026年３月期（予想）１株当たり期末配当金につきましては当該株式分割の影響を考慮した金額を記載し、１株当たり年間配当金合計は「－」としております。",,配当政策や配当の決定要因に関する説明,1523/1677
+tse-ed-t:CorrectionOfConsolidatedFinancialForecastInThisQuarter,当四半期連結業績予想の修正,Correction_of_Consolidated_Financial_Forecast_in_This_Quarter,その他,"日本基準, IFRS","無, 有",,四半期中に連結業績予想を修正した場合の記載,1504/1677
+tse-ed-t:NetIncomePerShare,1株当たり当期純利益,Net_Income_Per_Share,PL,"日本基準, IFRS","24.63, 18.40, 89.86",JPYPerShares,当期純利益を発行済株式数で除した1株当たりの利益,1444/1677
+tse-ed-t:TotalAssets,総資産,Total_Assets,BS,"日本基準, IFRS","683,112, 660,127, 217,865",JPY,企業が保有する資産の合計額,1444/1677
+tse-ed-t:NetAssets,純資産,Net_Assets,BS,"日本基準, IFRS","171,962, 172,121, 107,662",JPY,総資産から負債を差し引いた株主持分,1444/1677
+tse-ed-t:CapitalAdequacyRatio,自己資本比率,Capital_Adequacy_Ratio,BS,"日本基準, IFRS","25.2, 26.1, 47.7",Pure,総資産に占める自己資本の割合（％）,1444/1677
+tse-ed-t:OwnersEquity,株主資本,Owners'_Equity,BS,"日本基準, IFRS","171,897, 172,061, 103,985",JPY,株主が拠出した資本と留保利益の合計,1444/1677
+tse-ed-t:OrdinaryIncome,経常利益,Ordinary_Income,PL,"日本基準, IFRS","10,040, 7,348, 36,000",JPY,営業利益に営業外損益を加減した利益,1443/1677
+tse-ed-t:ChangeInOrdinaryIncome,経常利益増減率,Change_in_Ordinary_Income,PL,"日本基準, IFRS","36.6, 7.1, 91.1",Pure,前年同期比での経常利益の増減率（％）,1443/1677
+tse-ed-t:DilutedNetIncomePerShare,希薄化後1株当たり当期純利益,Diluted_Net_Income_Per_Share,PL,"日本基準, IFRS","72.32, 34.13, 16.49",JPYPerShares,新株予約権等の影響を考慮した希薄化後の1株当たり利益,1441/1677
+tse-ed-t:ChangesBasedOnRevisionsOfAccountingStandard,会計基準の改正による変更,Changes_Based_on_Revisions_of_Accounting_Standard,指標,日本基準,"無, 有",,会計基準の改正に伴う会計方針の変更,1440/1677
+tse-ed-t:ChangesOtherThanOnesBasedOnRevisionsOfAccountingStandard,会計基準改正以外による変更,Changes_Other_Than_Ones_Based_on_Revisions_of_Accounting_Standard,指標,日本基準,"無, 有",,会計基準改正以外の理由による会計方針の変更,1440/1677
+tse-ed-t:ChangesInAccountingEstimates,会計上の見積りの変更,Changes_in_Accounting_Estimates,指標,日本基準,"無, 有",,減価償却方法や貸倒引当金設定等の見積り変更,1440/1677
+tse-ed-t:RetrospectiveRestatement,遡及修正再表示,Retrospective_Restatement,その他,日本基準,無,,過年度の財務諸表を遡って修正した場合の記載,1440/1677
+tse-ed-t:NoteToFinancialPositions,財政状態に関する注記,Note_to_Financial_Positions,その他,"日本基準, IFRS","（注）当社グループは連結子会社である株式会社日本証券クリアリング機構の清算業務に係る多額の「清算引受資産・負債」及び「清算参加者預託金」等を資産、負債両建てで計上しております。「清算引受資産・負債」及び「清算参加者預託金」等を除いた当社グループの財政状態につきましては、添付資料Ｐ.４「１.経営成績等の概況－（２）当四半期の財政状態の概況」をご参照ください。, （注）当社は、2025年６月１日付で普通株式１株につき２株の割合で株式分割を行っております。前連結会計年度の期首に当該株式分割が行われたと仮定して、「１株当たり純資産」を算定しております。, (注)　「自己資本比率」は、(期末純資産の部合計ー期末新株予約権ー期末非支配株主持分)を期末資産の部合計で除して算出しております。なお、本「自己資本比率」は、自己資本比率告示に定める自己資本比率ではありません。",,貸借対照表の重要項目に関する補足説明,1435/1677
+tse-ed-t:NoteToSignificantChangesInTheScopeOfConsolidationDuringThePeriod,連結範囲の重要な変動に関する注記,Note_to_Significant_Changes_in_The_Scope_of_Consolidation_During_The_Period,指標,"日本基準, IFRS","(注)詳細は、添付資料8ページ「２.四半期連結財務諸表及び主な注記　（３）四半期連結財務諸表に関する注記事項（当四半期連結累計期間における連結範囲の重要な変更）」をご覧ください。, (注) 詳細は、四半期決算短信(添付資料)18ページ「２．サマリー情報(注記事項)に関する事項(１) 2025年６月30日に終了した３カ月間における連結範囲の重要な変更」をご参照ください。, 新規 １社　（社名）やまなし地域デザイン株式会社",,連結範囲変更の詳細と業績への影響に関する説明,1416/1677
+tse-ed-t:SignificantChangesInTheScopeOfConsolidationDuringThePeriod,期中の連結範囲の重要な変動,Significant_Changes_in_The_Scope_of_Consolidation_During_The_Period,指標,日本基準,"無, 有",,子会社の買収・売却等による連結範囲の変更,1388/1677
+tse-ed-t:ProfitAttributableToOwnersOfParent,親会社株主に帰属する当期純利益,Profit_Attributable_to_Owners_of_Parent,PL,日本基準,"6,899, 5,222, 25,000",JPY,親会社の株主に帰属する最終的な利益,1388/1677
+tse-ed-t:ChangeInProfitAttributableToOwnersOfParent,親会社株主に帰属する当期純利益増減率,Change_in_Profit_Attributable_to_Owners_of_Parent,PL,日本基準,"32.1, 9.3, 100.6",Pure,前年同期比での親会社株主帰属利益の増減率（％）,1388/1677
+tse-ed-t:ComprehensiveIncome,包括利益,Comprehensive_Income,PL,日本基準,"7,146, 6,264, 3,598",JPY,当期純利益にその他包括利益を加えた利益の総額,1388/1677
+tse-ed-t:ChangeInComprehensiveIncome,包括利益増減率,Change_in_Comprehensive_Income,PL,日本基準,"14.1, 4.4, 58.2",Pure,前年同期比での包括利益の増減率（％）,1387/1677
+tse-ed-t:OperatingIncome,営業利益,Operating_Income,PL,"日本基準, IFRS","10,278, 7,213, 39,500",JPY,売上高から売上原価と販売費及び一般管理費を差し引いた利益,1369/1677
+tse-ed-t:ChangeInOperatingIncome,営業利益増減率,Change_in_Operating_Income,PL,"日本基準, IFRS","42.5, 8.0, 82.0",Pure,前年同期比での営業利益の増減率（％）,1369/1677
+tse-ed-t:NoteToConsolidatedFinancialResults,連結業績に関する注記,Note_to_Consolidated_Financial_Results,その他,"日本基準, IFRS","（注）一部の連結子会社は、当第１四半期連結会計期間の期首から、退職給付見込額の期間帰属方法および未認識数理計算上の差異の費用処理方法の変更を行っており、前第１四半期連結累計期間および前連結会計年度に係る各種数値については、当該変更を遡って適用した後の数値となっております。, （注）2025年２月期第１四半期の基本的１株当たり四半期利益は、親会社の普通株主に帰属しない金額（その他資本性金融商品の所有者に帰属する金額）を考慮しております。, （注）当社は、2023年９月１日付で普通株式１株につき1.1株の割合、2025年６月１日付で普通株式1株につき、２株の割合で株式分割を行っております。1株当たり純資産につきましては、当該分割が前連結会計年度の期首に行われたと仮定し、算出しております。",,連結決算における業績に関する補足説明,1340/1677
+tse-ed-t:ReviewOfAttachedConsolidatedQuarterlyFinancialStatementsByACertifiedPublicAccountantOrAnAuditFirm,添付連結四半期財務諸表の監査,Review_of_Attached_Consolidated_Quarterly_Financial_Statements_by_A_Certified_Public_Accountant_or_An_Audit_Firm,その他,"日本基準, IFRS","有（任意）, 無, 有(任意)",,監査法人による四半期レビューの実施状況,1301/1677
+tse-ed-t:NetSales,売上高,Net_Sales,PL,"日本基準, IFRS","174,141, 154,349, 727,000",JPY,商品やサービスの販売による収益の合計額,1283/1677
+tse-ed-t:ChangeInNetSales,売上高増減率,Change_in_Net_Sales,PL,"日本基準, IFRS","12.8, 21.3, 0.1",Pure,前年同期比での売上高の増減率（％）,1283/1677
+tse-ed-t:NoteToChangesInAccountingPoliciesAccountingEstimatesAndRetrospectiveRestatementQuarterlyConsolidated,会計方針・会計上の見積り・修正再表示に関する注記（四半期連結）,Note_to_Changes_in_Accounting_Policies_Accounting_Estimates_and_Retrospective_Restatement_Quarterly_Consolidated,指標,日本基準,"（注）詳細は、添付資料Ｐ.10「２.四半期連結財務諸表及び主な注記（３）四半期連結財務諸表に関する注記事項（会計方針の変更）」をご参照ください。, (注）詳細は、四半期決算短信（添付資料）７ページ「２．四半期連結財務諸表及び主な注記　（３）四半期連結財務諸表に関する注記事項（会計方針の変更）」をご覧ください。, （注）詳細は、添付資料８ページ「２．四半期連結財務諸表及び主な注記（３）四半期連結財務諸表に関する注記事項（会計方針の変更）」をご参照ください。",,四半期連結における会計処理変更の詳細説明,1224/1677
+tse-ed-t:ApplyingOfSpecificAccountingOfTheConsolidatedQuarterlyFinancialStatements,連結四半期財務諸表の特定会計処理の適用,Applying_of_Specific_Accounting_of_The_Consolidated_Quarterly_Financial_Statements,その他,日本基準,"無, 有",,四半期特有の簡便的な会計処理の適用状況,1124/1677
+tse-ed-t:NoteToApplyingOfSpecificAccountingOfTheConsolidatedQuarterlyFinancialStatements,連結四半期財務諸表特定会計処理に関する注記,Note_to_Applying_of_Specific_Accounting_of_The_Consolidated_Quarterly_Financial_Statements,その他,日本基準,"（注）詳細は、【添付資料】Ｐ．９「２．四半期連結財務諸表及び主な注記（４）四半期連結財務諸表に関する注記事項（四半期連結財務諸表の作成に特有の会計処理に関する注記）」をご覧ください。, (注)詳細は、添付資料P.８「２．四半期連結財務諸表及び主な注記(３)四半期連結財務諸表に関する注記事項(四半期連結財務諸表の作成に特有の会計処理の適用)」をご覧ください。, (注)　詳細は、添付資料P.7「２．（３）四半期連結財務諸表に関する注記事項（四半期連結財務諸表の作成に特有の会計処理の適用）」をご覧ください。",,四半期特有の会計処理に関する詳細説明,1017/1677
+tse-ed-t:DividendPayableDateAsPlanned,配当支払開始予定日,Dividend_Payable_Date_as_Planned,指標,"日本基準, IFRS","2025年９月３日, 2025年9月5日, 2025年9月1日",,株主に配当金の支払いを開始する予定日,903/1677
+tse-ed-t:NumberOfSubsidiariesNewlyConsolidated,新規連結子会社数,Number_of_Subsidiaries_Newly_Consolidated,その他,日本基準,"1, 2, 7",NumberOfCompanies,期中に新たに連結対象となった子会社の数,833/1677
+tse-ed-t:NumberOfSubsidiariesExcludedFromConsolidation,連結除外子会社数,Number_of_Subsidiaries_Excluded_From_Consolidation,その他,日本基準,"1, 0, 3",NumberOfCompanies,期中に連結対象から除外された子会社の数,812/1677
+tse-ed-t:NameOfSubsidiariesNewlyConsolidated,新規連結子会社名,Name_of_Subsidiaries_Newly_Consolidated,その他,日本基準,"AUCNET ASIA-PACIFIC PTE.LTD., 株式会社WACUL株式会社ビコーズ, SBS Europe B.V.他６社",,期中に新たに連結対象となった子会社の名称,689/1677
+tse-ed-t:NameOfSubsidiariesExcludedFromConsolidation,連結除外子会社名,Name_of_Subsidiaries_Excluded_From_Consolidation,その他,日本基準,"京浜化工株式会社, 銀座六丁目プロパティ合同会社, 株式会社セカンドアロー",,期中に連結対象から除外された子会社の名称,655/1677
+tse-ed-t:NetAssetsPerShare,1株当たり純資産,Net_Assets_Per_Share,BS,"日本基準, IFRS","1,120.08, 1,160.02, 1,308.56",JPYPerShares,純資産を発行済株式数で除した1株当たりの純資産額,407/1677
+tse-ed-t:SemiAnnualStatementFilingDateAsPlanned,中間決算短信提出予定日,Semi_Annual_Statement_Filing_Date_as_Planned,基本情報,"日本基準, IFRS","2025年８月４日, 2025年8月4日, 2025年8月7日",,中間決算短信を提出する予定日,254/1677
+tse-ed-t:SignificantChangesInTheScopeOfConsolidationDuringThePeriodIFRS,期中の連結範囲の重要な変動（IFRS）,Significant_Changes_in_The_Scope_of_Consolidation_During_The_Period_IFRS,指標,"IFRS, 日本基準","有, 無",,IFRS適用企業における連結範囲の重要な変更,231/1677
+tse-ed-t:ChangesInAccountingPoliciesRequiredByIFRSIFRS,IFRS要求による会計方針の変更（IFRS）,Changes_in_Accounting_Policies_Required_by_IFRS_IFRS,指標,"IFRS, 日本基準","無, 有",,IFRS基準の要求による会計方針の変更,231/1677
+tse-ed-t:ChangesInAccountingPoliciesOtherThanIFRSRequirementsIFRS,IFRS要求以外による会計方針の変更（IFRS）,Changes_in_Accounting_Policies_Other_Than_IFRS_Requirements_IFRS,指標,"IFRS, 日本基準","無, 有",,IFRS基準以外の理由による会計方針の変更,231/1677
+tse-ed-t:ChangesInAccountingEstimatesIFRS,会計上の見積りの変更（IFRS）,Changes_in_Accounting_Estimates_IFRS,指標,"IFRS, 日本基準","無, 有",,IFRS適用企業における会計上の見積りの変更,231/1677
+tse-ed-t:ProfitAttributableToOwnersOfParentIFRS,親会社の所有者に帰属する利益（IFRS）,Profit_Attributable_to_Owners_of_Parent_IFRS,PL,"IFRS, 日本基準","90,926, 49,138, 340,000",JPY,IFRS基準における親会社株主に帰属する利益,231/1677
+tse-ed-t:BasicEarningsPerShareIFRS,基本的1株当たり利益（IFRS）,Basic_Earnings_Per_Share_IFRS,指標,"IFRS, 日本基準","43.89, 23.53, 164.12",JPYPerShares,IFRS基準における基本的1株当たり利益,231/1677
+tse-ed-t:TotalAssetsIFRS,資産合計（IFRS）,Total_Assets_IFRS,BS,"IFRS, 日本基準","6,301,122, 6,375,680, 1,160,805",JPY,IFRS基準における資産の合計額,231/1677
+tse-ed-t:TotalEquityIFRS,資本合計（IFRS）,Total_Equity_IFRS,BS,"IFRS, 日本基準","4,080,951, 4,076,366, 417,630",JPY,IFRS基準における資本の合計額,231/1677
+tse-ed-t:EquityAttributableToOwnersOfParentIFRS,親会社の所有者に帰属する持分（IFRS）,Equity_Attributable_to_Owners_of_Parent_IFRS,BS,"IFRS, 日本基準","3,953,312, 3,949,678, 403,853",JPY,IFRS基準における親会社株主持分,231/1677
+tse-ed-t:EquityAttributableToOwnersOfParentToTotalAssetsRatioIFRS,親会社所有者持分比率（IFRS）,Equity_Attributable_to_Owners_of_Parent_to_Total_Assets_Ratio_IFRS,BS,"IFRS, 日本基準","62.7, 61.9, 34.8",Pure,IFRS基準における親会社株主持分の総資産に対する比率（％）,231/1677
+tse-ed-t:ChangeInProfitAttributableToOwnersOfParentIFRS,親会社の所有者に帰属する利益増減率（IFRS）,Change_in_Profit_Attributable_to_Owners_of_Parent_IFRS,PL,"IFRS, 日本基準","85.0, 15.0, 4.9",Pure,IFRS基準での親会社株主帰属利益の前年同期比増減率（％）,230/1677
+tse-ed-t:DilutedEarningsPerShareIFRS,希薄化後1株当たり利益（IFRS）,Diluted_Earnings_Per_Share_IFRS,指標,"IFRS, 日本基準","43.89, 23.53, 41.21",JPYPerShares,IFRS基準における希薄化後1株当たり利益,229/1677
+tse-ed-t:ProfitBeforeTaxIFRS,税引前利益（IFRS）,Profit_Before_Tax_IFRS,PL,"IFRS, 日本基準","124,076, 76,125, 470,000",JPY,IFRS基準における税金費用計上前の利益,220/1677
+tse-ed-t:ChangeInProfitBeforeTaxIFRS,税引前利益増減率（IFRS）,Change_in_Profit_Before_Tax_IFRS,PL,"IFRS, 日本基準","63.0, 1.0, 7.5",Pure,IFRS基準での前年同期比税引前利益増減率（％）,218/1677
+tse-ed-t:TotalComprehensiveIncomeIFRS,包括利益合計（IFRS）,Total_Comprehensive_Income_IFRS,PL,"IFRS, 日本基準","99,931, 142,734, 10,494",JPY,IFRS基準における包括利益の合計額,216/1677
+tse-ed-t:ChangesInTotalComprehensiveIncomeIFRS,包括利益合計増減率（IFRS）,Changes_in_Total_Comprehensive_Income_IFRS,PL,"IFRS, 日本基準","30.0, 21.1, 15.7",Pure,IFRS基準での前年同期比包括利益増減率（％）,215/1677
+tse-ed-t:NoteToChangesInAccountingPoliciesAndAccountingEstimatesIFRS,会計方針・会計上の見積りの変更に関する注記（IFRS）,Note_to_Changes_in_Accounting_Policies_and_Accounting_Estimates_IFRS,指標,"IFRS, 日本基準","（注）詳細は、添付資料P.16「２．要約中間連結財務諸表及び主な注記（５）要約中間連結財務諸表に関する注記事項（会計方針の変更）」をご覧ください。, （注）詳細は、添付資料「２．要約四半期連結財務諸表及び主な注記（５）要約四半期連結財務諸表に関する注記事項」をご覧ください。, 詳細は、添付資料「２．要約四半期連結財務諸表及び主な注記　（５）要約四半期連結財務諸表に関する注記事項　４．重要性がある会計方針」をご参照ください。",,IFRS適用企業の会計処理変更に関する詳細説明,214/1677
+tse-ed-t:OperatingIncomeIFRS,営業利益（IFRS）,Operating_Income_IFRS,PL,"IFRS, 日本基準","111,972, 58,659, 430,000",JPY,IFRS基準における営業利益,208/1677
+tse-ed-t:ChangeInOperatingIncomeIFRS,営業利益増減率（IFRS）,Change_in_Operating_Income_IFRS,PL,"IFRS, 日本基準","90.9, 3.8, 9.7",Pure,IFRS基準での前年同期比営業利益増減率（％）,208/1677
+tse-ed-t:ProfitIFRS,利益（IFRS）,Profit_IFRS,PL,"IFRS, 日本基準","17,560, 16,161, 57,000",JPY,IFRS基準における当期利益,202/1677
+tse-ed-t:ChangeInProfitIFRS,利益増減率（IFRS）,Change_in_Profit_IFRS,PL,"IFRS, 日本基準","8.7, 10.4, 9.1",Pure,IFRS基準での前年同期比利益増減率（％）,201/1677
+tse-ed-t:ApplyingOfSpecificAccountingOfTheConsolidatedSemiAnnualFinancialStatements,連結中間財務諸表の特定会計処理の適用,Applying_of_Specific_Accounting_of_The_Consolidated_Semi_Annual_Financial_Statements,その他,日本基準,"無, 有",,連結中間財務諸表における特定会計処理の適用状況,192/1677
+tse-ed-t:NoteToApplyingOfSpecificAccountingOfTheConsolidatedSemiAnnualFinancialStatements,連結中間財務諸表特定会計処理に関する注記,Note_to_Applying_of_Specific_Accounting_of_The_Consolidated_Semi_Annual_Financial_Statements,その他,日本基準,"（注）詳細は、添付資料Ｐ．９「２．中間連結財務諸表及び主な注記　（４）中間連結財務諸表に関する注記事項（中間連結財務諸表の作成に特有の会計処理に関する注記）」をご覧ください。, (注) 詳細は、添付資料P.8「２．中間連結財務諸表及び主な注記（３）中間連結財務諸表に関する注記事項（第一種中間連結財務諸表の作成に特有の会計処理の適用）」をご覧ください。, （注）詳細は、添付資料９ページ「２．中間連結財務諸表及び主な注記（３）中間連結財務諸表に関する注記事項（中間連結財務諸表の作成に特有の会計処理に関する注記）」をご覧ください。",,連結中間財務諸表の特定会計処理に関する詳細説明,176/1677
+tse-ed-t:SalesIFRS,売上収益（IFRS）,Sales_IFRS,PL,IFRS,"110,802, 101,469, 224,400",JPY,IFRS第15号に基づく顧客との契約から生じる収益,166/1677
+tse-ed-t:ChangeInSalesIFRS,売上収益増減率（IFRS）,Change_in_Sales_IFRS,PL,IFRS,"9.2, 8.6, 7.2",Pure,IFRS基準での前年同期比売上収益増減率（％）,166/1677
+tse-ed-t:NumberOfSubsidiariesNewlyConsolidatedIFRS,新規連結子会社数（IFRS）,Number_of_Subsidiaries_Newly_Consolidated_IFRS,その他,IFRS,"1, 5, 0",NumberOfCompanies,IFRS適用企業における新規連結子会社の数,128/1677
+tse-ed-t:NumberOfSubsidiariesExcludedFromConsolidationIFRS,連結除外子会社数（IFRS）,Number_of_Subsidiaries_Excluded_From_Consolidation_IFRS,その他,IFRS,"2, 1, 0",NumberOfCompanies,IFRS適用企業における連結除外子会社の数,126/1677
+tse-ed-t:NetIncome,当期純利益,Net_Income,PL,"日本基準, IFRS","821, 369, 11,667",JPY,税引後の最終利益,122/1677
+tse-ed-t:ChangeInNetIncome,当期純利益増減率,Change_in_Net_Income,PL,"日本基準, IFRS","15.5, 4.0, 15.7",Pure,前年同期比での当期純利益の増減率（％）,122/1677
+tse-ed-t:NoteToFinancialResults,業績に関する注記,Note_to_Financial_Results,その他,"日本基準, IFRS","＜個別業績の前期実績値との差異理由＞当社は、持株会社体制への移行に伴い、2025年１月１日付で吸収分割方式による会社分割を実施し、当社のグループ管理事業以外の全ての事業を吸収分割承継会社（当社100％子会社）である「株式会社システムサポート分割準備会社」（2025年１月１日付で「株式会社システムサポート」に商号変更）に承継したため、前事業年度の実績値と当事業年度の実績値との間に差異が生じております。, ＜個別業績の前期実績値との差異理由＞個別業績の当期純利益に関する差異の理由は、前期に計上した特別利益の固定資産売却益123億32百万円が剥落したことによるものです。, ２．2026年５月期の個別業績予想（2025年６月１日～2026年５月31日）個別業績予想につきましては、2017年３月１日より持株会社に移行しており、投資情報としての重要性が大きくないと判断されるため、記載を省略しております。",,財務業績全般に関する補足説明,108/1677
+tse-ed-t:NameOfSubsidiariesExcludedFromConsolidationIFRS,連結除外子会社名（IFRS）,Name_of_Subsidiaries_Excluded_From_Consolidation_IFRS,その他,IFRS,"三菱電機インフォメーションシステムズ(株)、三菱電機ITソリューションズ(株), 第一三共プロファーマ株式会社、第一三共ケミカルファーマ株式会社, アルヒ住み替えコンシェルジュ株式会社",,IFRS適用企業で連結除外された子会社名,105/1677
+tse-ed-t:NameOfSubsidiariesNewlyConsolidatedIFRS,新規連結子会社名（IFRS）,Name_of_Subsidiaries_Newly_Consolidated_IFRS,その他,IFRS,"LINE Bank Taiwan Limited, Leiber GmbH　他4社, ニデックPSAイーモーターズ",,IFRS適用企業で新規連結となった子会社名,103/1677
+tse-ed-t:TotalDividendPaidAnnual,年間配当金総額,Total_Dividend_Paid_Annual,指標,"日本基準, IFRS","396, 393, 3,707",JPY,1年間に支払った配当金の総額,85/1677
+tse-ed-t:DateOfGeneralShareholdersMeetingAsPlanned,定時株主総会開催予定日,Date_of_General_Shareholders_Meeting_as_Planned,その他,"日本基準, IFRS","2025年９月18日, 2025年７月25日, 2025年９月25日",,定時株主総会を開催する予定日,84/1677
+tse-ed-t:AnnualSecuritiesReportFilingDateAsPlanned,有価証券報告書提出予定日,Annual_Securities_Report_Filing_Date_as_Planned,基本情報,"日本基準, IFRS","2025年９月17日, 2025年７月23日, 2025年９月24日",,有価証券報告書を提出する予定日,84/1677
+tse-ed-t:SupplementalMaterialOfAnnualResults,決算説明資料,Supplemental_Material_of_Annual_Results,その他,"日本基準, IFRS","有, 無",,年度決算説明のための補足資料の作成有無,84/1677
+tse-ed-t:WayOfGettingSupplementalMaterialOfAnnualResults,決算説明資料の入手方法,Way_of_Getting_Supplemental_Material_of_Annual_Results,その他,"日本基準, IFRS","（決算補足説明資料は、適宜、当社ホームページに掲載いたします。）, （決算補足資料は、適宜、当社ホームページに掲載いたします。）, 本日TDnetで公表ならびに当社ホームページ(IR情報)に掲載",,年度決算説明資料を入手する方法,84/1677
+tse-ed-t:ConveningBriefingOfAnnualResults,決算説明会開催の有無,Convening_Briefing_of_Annual_Results,その他,"日本基準, IFRS","無, 有",,年度決算説明会を開催するかどうか,84/1677
+tse-ed-t:TargetAudienceBriefingOfAnnualResults,決算説明会の対象者,Target_Audience_Briefing_of_Annual_Results,その他,"日本基準, IFRS","動画配信のみ, （機関投資家・アナリスト向け）, （アナリスト・機関投資家向け）",,年度決算説明会の参加対象者,84/1677
+tse-ed-t:NetIncomeToShareholdersEquityRatio,株主資本利益率,Net_Income_to_Shareholders_Equity_Ratio,指標,日本基準,"1.8, 1.3, 8.0",Pure,ROE：株主資本に対する当期純利益の比率（％）,78/1677
+tse-ed-t:OrdinaryIncomeToTotalAssetsRatio,総資産経常利益率,Ordinary_Income_to_Total_Assets_Ratio,指標,日本基準,"2.4, 0.4, 6.6",Pure,ROA：総資産に対する経常利益の比率（％）,78/1677
+tse-ed-t:CashFlowsFromOperatingActivities,営業活動によるキャッシュフロー,Cash_Flows_From_Operating_Activities,CF,日本基準,"1,468, 1,047, 18,038",JPY,本業の営業活動により生み出されたキャッシュフロー,78/1677
+tse-ed-t:CashFlowsFromInvestingActivities,投資活動によるキャッシュフロー,Cash_Flows_From_Investing_Activities,CF,日本基準,"825, 444, 13,333",JPY,設備投資や有価証券投資等によるキャッシュフロー,78/1677
+tse-ed-t:CashFlowsFromFinancingActivities,財務活動によるキャッシュフロー,Cash_Flows_From_Financing_Activities,CF,日本基準,"175, 1,071, 23,236",JPY,借入金や株式発行等の資金調達活動によるキャッシュフロー,78/1677
+tse-ed-t:CashAndEquivalentsEndOfPeriod,現金及び現金同等物期末残高,Cash_and_Equivalents_End_of_Period,CF,日本基準,"6,399, 5,689, 85,565",JPY,期末時点での現金及び現金同等物の残高,78/1677
+tse-ed-t:PayoutRatio,配当性向,Payout_Ratio,指標,日本基準,"92.6, 39.4, 33.2",Pure,当期純利益に対する配当金の比率（％）,78/1677
+tse-ed-t:RatioOfTotalAmountOfDividendsToNetAssets,純資産配当率,Ratio_of_Total_Amount_of_Dividends_to_Net_Assets,指標,日本基準,"1.6, 2.9, 5.2",Pure,純資産に対する配当金総額の比率（％）,78/1677
+tse-ed-t:OperatingIncomeToNetSalesRatio,売上高営業利益率,Operating_Income_to_Net_Sales_Ratio,指標,日本基準,"1.4, 0.6, 4.9",Pure,売上高に対する営業利益の比率（％）,77/1677
+tse-ed-t:OperatingRevenues,営業収益,Operating_Revenues,PL,日本基準,"11,481, 10,761, 59,200",JPY,金融業等で使用される営業活動による収益,75/1677
+tse-ed-t:ChangeInOperatingRevenues,営業収益増減率,Change_in_Operating_Revenues,PL,日本基準,"6.7, 2.1, 3.9",Pure,前年同期比での営業収益の増減率（％）,75/1677
+tse-ed-t:NoteToCashFlows,キャッシュフローに関する注記,Note_to_Cash_Flows,CF,"日本基準, IFRS",,,キャッシュフロー計算書の重要項目に関する補足説明,75/1677
+tse-ed-t:InvestmentProfitLossOnEquityMethod,持分法による投資損益,Investment_Profit_Loss_on_Equity_Method,PL,日本基準,"132, 170, 4",JPY,持分法適用会社からの投資損益,74/1677
+tse-ed-t:NoteToChangesInAccountingPoliciesAndAccountingEstimatesRetrospectiveRestatement,会計方針・会計上の見積り・修正再表示に関する注記,Note_to_Changes_in_Accounting_Policies_and_Accounting_Estimates_Retrospective_Restatement,指標,日本基準,"（注）詳細については、添付資料13ページ「３．連結財務諸表等（５）連結財務諸表に関する注記事項（会計方針の変更）」をご覧ください。, （注）詳細は、添付資料P.11「３.連結財務諸表及び主な注記（５）連結財務諸表に関する注記事項（会計方針の変更に関する注記）」をご覧ください。, (注)詳細は、添付資料19ページ「３.連結財務諸表及び主な注記（５）連結財務諸表に関する注記事項（会計方針の変更）」をご覧ください。",,会計処理変更全般に関する詳細説明,72/1677
+tse-ed-t:SettingOfSpecificTransactionAccountBK,特定取引勘定の設定（銀行業）,Setting_of_Specific_Transaction_Account_BK,その他,日本基準,"無, 有",,銀行業における特定取引勘定の設定状況,69/1677
+tse-ed-t:OrdinaryRevenuesBK,経常収益（銀行業）,Ordinary_Revenues_BK,PL,日本基準,"17,987, 13,950, 91,838",JPY,銀行業における経常的な営業収益,68/1677
+tse-ed-t:ChangeInOrdinaryRevenuesBK,経常収益増減率（銀行業）,Change_in_Ordinary_Revenues_BK,PL,日本基準,"28.9, 1.4, 8.2",Pure,銀行業での前年同期比経常収益増減率（％）,68/1677
+tse-ed-t:NetSalesIFRS,売上高（IFRS）,Net_Sales_IFRS,PL,IFRS,"1,312,896, 1,286,484, 5,400,000",JPY,IFRS基準における売上収益,44/1677
+tse-ed-t:ChangeInNetSalesIFRS,売上高増減率（IFRS）,Change_in_Net_Sales_IFRS,PL,IFRS,"2.1, 5.4, 2.2",Pure,IFRS基準での前年同期比売上高増減率（％）,44/1677
+tse-ed-t:EquityAttributableToOwnersOfParentPerShareIFRS,1株当たり親会社所有者持分（IFRS）,Equity_Attributable_to_Owners_of_Parent_Per_Share_IFRS,BS,"IFRS, 日本基準","1,606.22, 1,597.24, 2,284.52",JPYPerShares,IFRS基準における1株当たり親会社株主持分,42/1677
+tse-ed-t:CorrectionOfFinancialForecastInThisQuarter,当四半期業績予想の修正,Correction_of_Financial_Forecast_in_This_Quarter,その他,日本基準,"無, 有",,四半期中に業績予想を修正した場合の記載,42/1677
+tse-ed-t:ApplyingOfSpecificAccountingOfTheQuarterlyFinancialStatements,四半期財務諸表の特定会計処理の適用,Applying_of_Specific_Accounting_of_The_Quarterly_Financial_Statements,その他,日本基準,"無, 有",,四半期財務諸表における特定会計処理の適用状況,37/1677
+tse-ed-t:ReviewOfAttachedQuarterlyFinancialStatementsByACertifiedPublicAccountantOrAnAuditFirm,添付四半期財務諸表の監査,Review_of_Attached_Quarterly_Financial_Statements_by_A_Certified_Public_Accountant_or_An_Audit_Firm,その他,日本基準,"無, 有（任意）, 有(任意)",,監査法人による四半期財務諸表のレビュー実施状況,37/1677
+tse-ed-t:TokyoStockExchange1stSection,東京証券取引所市場第一部,Tokyo_Stock_Exchange_1st_Section,基本情報,"日本基準, IFRS",false,,旧東京証券取引所市場第一部への上場状況（2022年4月改組前）,33/1677
+tse-ed-t:TokyoStockExchange2ndSection,東京証券取引所市場第二部,Tokyo_Stock_Exchange_2nd_Section,基本情報,"日本基準, IFRS",false,,旧東京証券取引所市場第二部への上場状況（2022年4月改組前）,33/1677
+tse-ed-t:TokyoStockExchangeMothers,東京証券取引所マザーズ,Tokyo_Stock_Exchange_Mothers,基本情報,"日本基準, IFRS",false,,旧東京証券取引所マザーズ市場への上場状況（2022年4月改組前）,33/1677
+tse-ed-t:TokyoStockExchangeJASDAQ,東京証券取引所JASDAQ,Tokyo_Stock_Exchange_JASDAQ,基本情報,"日本基準, IFRS",false,,旧東京証券取引所JASDAQ市場への上場状況（2022年4月改組前）,33/1677
+tse-ed-t:NoteToApplyingOfSpecificAccountingOfTheQuarterlyFinancialStatements,四半期財務諸表特定会計処理に関する注記,Note_to_Applying_of_Specific_Accounting_of_The_Quarterly_Financial_Statements,その他,日本基準,"（注）詳細は、四半期決算短信（添付資料）７ページ「四半期財務諸表の作成に特有の会計処理の適用」をご覧ください。, (注)詳細については、添付資料６ページ「２．四半期財務諸表及び主な注記(３)四半期財務諸表に関する注記事項(四半期財務諸表の作成に特有の会計処理の適用)」をご覧ください。, 詳細は、「添付資料」P.６「２．四半期財務諸表及び主な注記（３）四半期財務諸表に関する注記事項（四半期財務諸表の作成に特有の会計処理に関する注記）」をご覧ください。",,四半期特定会計処理に関する詳細説明,31/1677
+tse-ed-t:RevenueIFRS,収益（IFRS）,Revenue_IFRS,PL,"IFRS, 日本基準","8,838, 10,172, 51,970",JPY,IFRS第15号に基づく顧客との契約による収益,13/1677
+tse-ed-t:ChangeInRevenueIFRS,収益増減率（IFRS）,Change_in_Revenue_IFRS,PL,"IFRS, 日本基準","13.1, 22.9, 2.2",Pure,IFRS基準での前年同期比収益増減率（％）,13/1677
+tse-ed-t:NetOperatingRevenuesSE,純営業収益（証券業）,Net_Operating_Revenues_SE,PL,日本基準,"6,691, 6,597, 4,356",JPY,証券業における営業収益から営業費用を差し引いた純収益,11/1677
+tse-ed-t:ChangeInNetOperatingRevenuesSE,純営業収益増減率（証券業）,Change_in_Net_Operating_Revenues_SE,PL,日本基準,"1.4, 17.2, 12.2",Pure,証券業での前年同期比純営業収益増減率（％）,11/1677
+tse-ed-t:ApplyingOfSpecificAccountingOfTheSemiAnnualFinancialStatements,中間財務諸表の特定会計処理の適用,Applying_of_Specific_Accounting_of_The_Semi_Annual_Financial_Statements,その他,日本基準,"有, 無",,中間財務諸表における特定会計処理の適用状況,9/1677
+tse-ed-t:NoteToApplyingOfSpecificAccountingOfTheSemiAnnualFinancialStatements,中間財務諸表特定会計処理に関する注記,Note_to_Applying_of_Specific_Accounting_of_The_Semi_Annual_Financial_Statements,その他,日本基準,（注）詳細は添付資料11ページ「中間財務諸表及び主な注記（４）中間財務諸表に関する注記事項（中間財務諸表の作成に特有の会計処理の適用）」をご覧ください。,,中間財務諸表の特定会計処理に関する詳細説明,9/1677
+tse-ed-t:OperatingRevenuesIFRS,営業収益（IFRS）,Operating_Revenues_IFRS,PL,IFRS,"43,451, 40,328, 161,000",JPY,IFRS基準における営業活動による収益,8/1677
+tse-ed-t:ChangeInOperatingRevenuesIFRS,営業収益増減率（IFRS）,Change_in_Operating_Revenues_IFRS,PL,IFRS,"7.7, 9.1, 0.8",Pure,IFRS基準での前年同期比営業収益増減率（％）,8/1677
+tse-ed-t:OperatingRevenuesSE,営業収益（証券業）,Operating_Revenues_SE,PL,日本基準,"6,758, 6,653, 4,366",JPY,証券業における営業活動による収益,8/1677
+tse-ed-t:ChangeInOperatingRevenuesSE,営業収益増減率（証券業）,Change_in_Operating_Revenues_SE,PL,日本基準,"1.6, 16.5, 12.3",Pure,証券業での前年同期比営業収益増減率（％）,8/1677
+tse-ed-t:ExtraDividend,特別配当,Extra_Dividend,指標,"日本基準, IFRS","12円00銭, ４円00銭",JPYPerShares,業績好調等による通常配当に加えた追加配当,7/1677
+tse-ed-t:InvestmentsAccountedForUsingEquityMethodIFRS,持分法で会計処理されている投資（IFRS）,Investments_Accounted_for_Using_Equity_Method_IFRS,BS,IFRS,"3,179, 7,164, 14",JPY,IFRS基準における持分法適用投資,7/1677
+tse-ed-t:CashFlowsFromOperatingActivitiesIFRS,営業活動によるキャッシュフロー（IFRS）,Cash_Flows_From_Operating_Activities_IFRS,CF,IFRS,"284,428, 320,766, 341",JPY,IFRS基準における営業活動キャッシュフロー,7/1677
+tse-ed-t:CashFlowsFromInvestingActivitiesIFRS,投資活動によるキャッシュフロー（IFRS）,Cash_Flows_From_Investing_Activities_IFRS,CF,IFRS,"147,255, 153,553, 1,037",JPY,IFRS基準における投資活動キャッシュフロー,7/1677
+tse-ed-t:CashFlowsFromFinancingActivitiesIFRS,財務活動によるキャッシュフロー（IFRS）,Cash_Flows_From_Financing_Activities_IFRS,CF,IFRS,"80,193, 181,557, 2,442",JPY,IFRS基準における財務活動キャッシュフロー,7/1677
+tse-ed-t:CashAndCashEquivalentsAtEndOfPeriodIFRS,現金及び現金同等物期末残高（IFRS）,Cash_and_Cash_Equivalents_at_End_of_Period_IFRS,CF,IFRS,"246,239, 217,005, 7,506",JPY,IFRS基準における現金及び現金同等物の期末残高,7/1677
+tse-ed-t:PayoutRatioIFRS,配当性向（IFRS）,Payout_Ratio_IFRS,指標,IFRS,"34.6, 27.4, 24.4",Pure,IFRS基準における当期利益に対する配当の比率（％）,7/1677
+tse-ed-t:OrdinaryRevenuesIN,経常収益（保険業）,Ordinary_Revenues_IN,PL,日本基準,"18,235, 16,519, 35,000",JPY,保険業における経常的な営業収益,7/1677
+tse-ed-t:ChangeInOrdinaryRevenuesIN,経常収益増減率（保険業）,Change_in_Ordinary_Revenues_IN,PL,日本基準,"10.4, 11.1, 6.4",Pure,保険業での前年同期比経常収益増減率（％）,7/1677
+tse-ed-t:ProfitToEquityAttributableToOwnersOfParentRatioIFRS,親会社所有者持分利益率（IFRS）,Profit_to_Equity_Attributable_to_Owners_of_Parent_Ratio_IFRS,指標,IFRS,"10.0, 8.4, 30.4",Pure,IFRS基準におけるROE：親会社株主持分に対する利益の比率（％）,6/1677
+tse-ed-t:ProfitBeforeTaxToTotalAssetsRatioIFRS,税引前利益総資産利益率（IFRS）,Profit_Before_Tax_to_Total_Assets_Ratio_IFRS,指標,IFRS,"7.3, 6.7, 22.9",Pure,IFRS基準における総資産に対する税引前利益の比率（％）,6/1677
+tse-ed-t:RatioOfTotalAmountOfDividendsToEquityAttributableToOwnerOfParentConsolidatedIFRS,親会社所有者持分配当率（連結・IFRS）,Ratio_of_Total_Amount_of_Dividends_to_Equity_Attributable_to_Owner_of_Parent_Consolidated_IFRS,指標,IFRS,"2.9, 2.7, 8.6",Pure,IFRS連結における親会社株主持分に対する配当の比率（％）,6/1677
+tse-ed-t:NoteToConsolidatedIncomeStatementsInformationUS,連結損益計算書情報に関する注記（米国基準）,Note_to_Consolidated_Income_Statements_Information_US,PL,日本基準,,,米国基準における連結損益計算書の重要項目に関する説明,6/1677
+tse-ed-t:SignificantChangesInTheScopeOfConsolidationDuringThePeriodUS,期中の連結範囲の重要な変動（米国基準）,Significant_Changes_in_The_Scope_of_Consolidation_During_The_Period_US,指標,日本基準,無,,米国基準適用企業における連結範囲の重要な変更,6/1677
+tse-ed-t:ApplyingOfSimplifiedMethodOfAccountingAndSpecificAccountingOfTheConsolidatedQuarterlyFinancialStatements,連結四半期財務諸表の簡便的会計処理及び特定会計処理の適用,Applying_of_Simplified_Method_of_Accounting_and_Specific_Accounting_of_The_Consolidated_Quarterly_Financial_Statements,その他,日本基準,無,,連結四半期における簡便的・特定会計処理の適用状況,6/1677
+tse-ed-t:NoteToApplyingOfSimplifiedMethodOfAccountingAndSpecificAccountingOfTheConsolidatedQuarterlyFinancialStatements,連結四半期財務諸表簡便的・特定会計処理に関する注記,Note_to_Applying_of_Simplified_Method_of_Accounting_and_Specific_Accounting_of_The_Consolidated_Quarterly_Financial_Statements,その他,日本基準,,,連結四半期の簡便的・特定会計処理に関する詳細説明,6/1677
+tse-ed-t:ChangesBasedOnRevisionsOfAccountingStandardUS,会計基準の改正による変更（米国基準）,Changes_Based_on_Revisions_of_Accounting_Standard_US,指標,日本基準,"無, 有",,米国基準の改正に伴う会計方針の変更,6/1677
+tse-ed-t:ChangesOtherThanOnesBasedOnRevisionsOfAccountingStandardUS,会計基準改正以外による変更（米国基準）,Changes_Other_Than_Ones_Based_on_Revisions_of_Accounting_Standard_US,指標,日本基準,無,,米国基準改正以外の理由による会計方針の変更,6/1677
+tse-ed-t:NoteToChangesInAccountingPrinciplesProceduresAndThePresentationOfTheConsolidatedQuarterlyFinancialStatements,連結四半期財務諸表会計原則・手続・表示方法変更に関する注記,Note_to_Changes_in_Accounting_Principles_Procedures_and_The_Presentation_of_The_Consolidated_Quarterly_Financial_Statements,指標,日本基準,（注）詳細は、添付資料10ページ「２．四半期連結財務諸表および主な注記（４）会計方針の変更」をご覧ください。,,連結四半期財務諸表の会計処理変更全般に関する説明,6/1677
+tse-ed-t:IncomeBeforeIncomeTaxesUS,税引前当期純利益（米国基準）,Income_Before_Income_Taxes_US,PL,日本基準,"222,319, 221,447, 472,000",JPY,米国基準における税金費用計上前の利益,6/1677
+tse-ed-t:ChangeInIncomeBeforeIncomeTaxesUS,税引前当期純利益増減率（米国基準）,Change_in_Income_Before_Income_Taxes_US,PL,日本基準,"0.4, 17.4, 56.7",Pure,米国基準での前年同期比税引前利益増減率（％）,6/1677
+tse-ed-t:NetIncomeUS,当期純利益（米国基準）,Net_Income_US,PL,日本基準,"155,904, 149,806, 330,000",JPY,米国基準における最終的な当期純利益,6/1677
+tse-ed-t:ChangeInNetIncomeUS,当期純利益増減率（米国基準）,Change_in_Net_Income_US,PL,日本基準,"4.1, 23.0, 106.2",Pure,米国基準での前年同期比当期純利益増減率（％）,6/1677
+tse-ed-t:NetIncomePerShareUS,1株当たり当期純利益（米国基準）,Net_Income_Per_Share_US,PL,日本基準,"169.16, 152.53, 361.73",JPYPerShares,米国基準における1株当たり当期純利益,6/1677
+tse-ed-t:TotalAssetsUS,総資産（米国基準）,Total_Assets_US,BS,日本基準,"5,970,001, 5,766,246, 5,343,878",JPY,米国基準における総資産,6/1677
+tse-ed-t:NetAssetsUS,純資産（米国基準）,Net_Assets_US,BS,日本基準,"3,481,054, 3,645,051, 3,403,176",JPY,米国基準における純資産,6/1677
+tse-ed-t:ShareholdersEquityUS,株主資本（米国基準）,Shareholders_Equity_US,BS,日本基準,"3,210,363, 3,380,273, 3,398,793",JPY,米国基準における株主資本,6/1677
+tse-ed-t:ShareholdersEquityRatioUS,株主資本比率（米国基準）,Shareholders_Equity_Ratio_US,BS,日本基準,"53.8, 58.6, 63.6",Pure,米国基準における総資産に対する株主資本の比率（％）,6/1677
+tse-ed-t:CommemorativeDividend,記念配当,Commemorative_Dividend,指標,"日本基準, IFRS",,JPYPerShares,周年記念等の特別な理由による追加配当,5/1677
+tse-ed-t:OperatingIncomeUS,営業利益（米国基準）,Operating_Income_US,PL,日本基準,"214,308, 198,474, 460,000",JPY,米国基準における営業利益,5/1677
+tse-ed-t:ChangeInOperatingIncomeUS,営業利益増減率（米国基準）,Change_in_Operating_Income_US,PL,日本基準,"8.0, 12.3, 64.4",Pure,米国基準での前年同期比営業利益増減率（％）,5/1677
+tse-ed-t:NetSalesUS,売上高（米国基準）,Net_Sales_US,PL,日本基準,"2,198,567, 2,156,305, 4,600,000",JPY,米国基準における売上高,4/1677
+tse-ed-t:ChangeInNetSalesUS,売上高増減率（米国基準）,Change_in_Net_Sales_US,PL,日本基準,"2.0, 8.2, 0.1",Pure,米国基準での前年同期比売上高増減率（％）,4/1677
+tse-ed-t:ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterestUS,包括利益（税引後・非支配持分含む・米国基準）,Comprehensive_Income_Net_of_Tax_Including_Portion_Attributable_to_Noncontrolling_Interest_US,PL,日本基準,"116,628, 374,886, 56,081",JPY,米国基準における税引後包括利益（非支配持分含む）,4/1677
+tse-ed-t:ChangeInComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterestUS,包括利益増減率（税引後・非支配持分含む・米国基準）,Change_in_Comprehensive_Income_Net_of_Tax_Including_Portion_Attributable_to_Noncontrolling_Interest_US,PL,日本基準,"68.9, 17.6, 72.4",Pure,米国基準での前年同期比包括利益増減率（％）,4/1677
+tse-ed-t:OperatingIncomeToSalesRatioIFRS,売上収益営業利益率（IFRS）,Operating_Income_to_Sales_Ratio_IFRS,指標,IFRS,"10.0, 10.3, 6.6",Pure,IFRS基準における売上収益に対する営業利益の比率（％）,4/1677
+tse-ed-t:DilutedNetIncomePerShareUS,希薄化後1株当たり当期純利益（米国基準）,Diluted_Net_Income_Per_Share_US,PL,日本基準,"169.06, 152.45, 44.59",JPYPerShares,米国基準における希薄化後1株当たり当期純利益,3/1677
+tse-ed-t:DilutedNetIncomePerShare2US,希薄化後1株当たり当期純利益2（米国基準）,Diluted_Net_Income_Per_Share_2_US,PL,日本基準,"99.08, 116.47, 94.44",JPYPerShares,米国基準における希薄化後1株当たり当期純利益の別表記,3/1677
+tse-ed-t:NumberOfSubsidiariesNewlyConsolidatedUS,新規連結子会社数（米国基準）,Number_of_Subsidiaries_Newly_Consolidated_US,その他,日本基準,0,NumberOfCompanies,米国基準適用企業における新規連結子会社の数,3/1677
+tse-ed-t:NumberOfSubsidiariesExcludedFromConsolidationUS,連結除外子会社数（米国基準）,Number_of_Subsidiaries_Excluded_From_Consolidation_US,その他,日本基準,0,NumberOfCompanies,米国基準適用企業における連結除外子会社の数,3/1677
+tse-ed-t:OperatingRevenuesSpecific,営業収益（特定業種）,Operating_Revenues_Specific,PL,日本基準,"84,878, 85,976, 300,000",JPY,特定業種（金融業等）における営業収益,2/1677
+tse-ed-t:ChangeInOperatingRevenuesSpecific,営業収益増減率（特定業種）,Change_in_Operating_Revenues_Specific,PL,日本基準,"1.3, 15.9, 4.2",Pure,特定業種での前年同期比営業収益増減率（％）,2/1677
+tse-ed-t:Revenue,収益,Revenue,PL,日本基準,"67,401, 59,715, 272,500",JPY,IFRS第15号等に基づく収益認識基準による収益,2/1677
+tse-ed-t:ChangeInRevenue,収益増減率,Change_in_Revenue,PL,日本基準,"12.9, 11.5, 7.1",Pure,前年同期比での収益の増減率（％）,2/1677
+tse-ed-t:ShareholdersEquityPerShareUS,1株当たり株主資本（米国基準）,Shareholders_Equity_Per_Share_US,BS,日本基準,"3,389.77, 3,438.70, 1,177.31",JPYPerShares,米国基準における1株当たり株主資本,2/1677
+tse-ed-t:Revenue2,収益2,Revenue_2,PL,日本基準,"6,536, 7,473, 14,000",JPY,収益認識基準による収益の別表記,2/1677
+tse-ed-t:ChangeInRevenue2,収益2増減率,Change_in_Revenue_2,PL,日本基準,"12.5, 10.4, 13.3",Pure,収益2の前年同期比増減率（％）,2/1677
+tse-ed-t:NetSalesOfCompletedConstructionContracts,完成工事高,Net_Sales_of_Completed_Construction_Contracts,PL,日本基準,"105,370, 102,676, 493,000",JPY,建設業における完成した工事による売上高,1/1677
+tse-ed-t:ChangeInNetSalesOfCompletedConstructionContracts,完成工事高増減率,Change_in_Net_Sales_of_Completed_Construction_Contracts,PL,日本基準,"2.6, 13.0, 1.1",Pure,建設業での前年同期比完成工事高増減率（％）,1/1677
+tse-ed-t:OperatingIncomeToNetSalesRatioIFRS,売上高営業利益率（IFRS）,Operating_Income_to_Net_Sales_Ratio_IFRS,指標,IFRS,"9.2, 6.9",Pure,IFRS基準における売上高に対する営業利益の比率（％）,1/1677
+tse-ed-t:GrossOperatingRevenues,営業総収入,Gross_Operating_Revenues,PL,日本基準,"23,721, 20,553, 97,000",JPY,営業活動による総収入（業種により内容が異なる）,1/1677
+tse-ed-t:ChangeInGrossOperatingRevenues,営業総収入増減率,Change_in_Gross_Operating_Revenues,PL,日本基準,"15.4, 5.3, 10.9",Pure,前年同期比での営業総収入の増減率（％）,1/1677
+tse-ed-t:BasicNetIncomePerShareUS,基本的1株当たり当期純利益（米国基準）,Basic_Net_Income_Per_Share_US,PL,日本基準,"44.63, 50.44",JPYPerShares,米国基準における基本的1株当たり当期純利益,1/1677
+tse-ed-t:ConsolidatedCapitalAdequacyRatioDomesticBK,連結自己資本比率（国内基準・銀行業）,Consolidated_Capital_Adequacy_Ratio_Domestic_BK,BS,日本基準,"9.99, 9.75",Pure,銀行業における国内基準での連結自己資本比率（％）,1/1677
+tse-ed-t:OperatingIncomeToOperatingRevenuesRatio,営業収益営業利益率,Operating_Income_to_Operating_Revenues_Ratio,指標,日本基準,"11.5, 10.3",Pure,営業収益に対する営業利益の比率（％）,1/1677
+tse-ed-t:TotalRevenuesUS,総収益（米国基準）,Total_Revenues_US,PL,日本基準,"1,156,588, 1,217,885",JPY,米国基準における総収益,1/1677
+tse-ed-t:ChangeInTotalRevenuesUS,総収益増減率（米国基準）,Change_in_Total_Revenues_US,PL,日本基準,"5.0, 36.3",Pure,米国基準での前年同期比総収益増減率（％）,1/1677
+tse-ed-t:TotalRevenuesAfterDeductingFinancialExpenseUS,金融費用控除後総収益（米国基準）,Total_Revenues_After_Deducting_Financial_Expense_US,PL,日本基準,"523,315, 454,442",JPY,米国基準における金融費用控除後の総収益,1/1677
+tse-ed-t:ChangeInTotalRevenuesAfterDeductingFinancialExpenseUS,金融費用控除後総収益増減率（米国基準）,Change_in_Total_Revenues_After_Deducting_Financial_Expense_US,PL,日本基準,"15.2, 30.2",Pure,米国基準での金融費用控除後総収益の前年同期比増減率（％）,1/1677
+tse-ed-t:ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest3US,包括利益3（税引後・非支配持分含む・米国基準）,Comprehensive_Income_Net_of_Tax_Including_Portion_Attributable_to_Noncontrolling_Interest_3_US,PL,日本基準,"61,629, 189,295",JPY,米国基準における包括利益の別表記（税引後・非支配持分含む）,1/1677
+tse-ed-t:ChangeInComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest3US,包括利益3増減率（税引後・非支配持分含む・米国基準）,Change_in_Comprehensive_Income_Net_of_Tax_Including_Portion_Attributable_to_Noncontrolling_Interest_3_US,PL,日本基準,"67.4, 49.9",Pure,米国基準での包括利益3の前年同期比増減率（％）,1/1677
+tse-ed-t:OperatingRevenuesUS,営業収益（米国基準）,Operating_Revenues_US,PL,日本基準,"768,641, 708,139",JPY,米国基準における営業活動による収益,1/1677
+tse-ed-t:ChangeInOperatingRevenuesUS,営業収益増減率（米国基準）,Change_in_Operating_Revenues_US,PL,日本基準,"8.5, 4.6",Pure,米国基準での前年同期比営業収益増減率（％）,1/1677
+tse-ed-t:ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest5US,包括利益5（税引後・非支配持分含む・米国基準）,Comprehensive_Income_Net_of_Tax_Including_Portion_Attributable_to_Noncontrolling_Interest_5_US,PL,日本基準,"144,448, 207,115",JPY,米国基準における包括利益のさらなる別表記（税引後・非支配持分含む）,1/1677
+tse-ed-t:ChangeInComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest5US,包括利益5増減率（税引後・非支配持分含む・米国基準）,Change_in_Comprehensive_Income_Net_of_Tax_Including_Portion_Attributable_to_Noncontrolling_Interest_5_US,PL,日本基準,"30.3, 29.5",Pure,米国基準での包括利益5の前年同期比増減率（％）,1/1677

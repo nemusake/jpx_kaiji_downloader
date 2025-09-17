@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test/Tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.ipynb_checkpoints
+
+# Env/Secrets
+.env
+.env.*
+*.log
+*.tmp
+
+# Virtual env
+.venv/
+venv/
+
+# Editors/OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Large artifacts by directory (not committed)
+downloads/*.csv
+downloads/**/*.csv
+downloads/*.htm
+downloads/**/*.htm
+downloads/*.json
+downloads/**/*.json
+
+output/*.csv
+output/**/*.csv
+output/*.htm
+output/**/*.htm
+output/*.json
+output/**/*.json
+output/*.db
+output/**/*.db
+# Only exclude attachments' Markdown artifacts
+output/attachments/*.md
+output/attachments/**/*.md
+
+logs/*.csv
+logs/**/*.csv
+logs/*.htm
+logs/**/*.htm
+logs/*.json
+logs/**/*.json
+
+debug/*.csv
+debug/**/*.csv
+debug/*.htm
+debug/**/*.htm
+debug/*.json
+debug/**/*.json
+
+data/*.csv
+data/**/*.csv
+data/*.htm
+data/**/*.htm
+data/*.json
+data/**/*.json
+
+# Downloads archives (exclude large zip)
+downloads/*.zip
+downloads/**/*.zip
