@@ -577,7 +577,7 @@ class JPXScraper:
 
         return download_results
     
-    def download_html_summaries(self, stock_code: str) -> List[Dict]:
+    def download_html_summaries(self, stock_code: str, disclosure_info: Optional[List[Dict]] = None) -> List[Dict]:
         """
         HTMLサマリーファイルをダウンロード
         
@@ -592,8 +592,9 @@ class JPXScraper:
         import requests
         from urllib.parse import urlparse
         
-        # 適時開示情報を取得
-        disclosure_info = self.fetch_disclosure_documents(stock_code)
+        # 適時開示情報を取得（渡されていない場合のみ取得）
+        if disclosure_info is None:
+            disclosure_info = self.fetch_disclosure_documents(stock_code)
         
         # HTMLサマリーURLが存在するもののみフィルタ
         html_docs = [doc for doc in disclosure_info if doc.get('html_summary_url')]
@@ -689,7 +690,7 @@ class JPXScraper:
         
         return download_results
     
-    def download_attachments(self, stock_code: str) -> List[Dict]:
+    def download_attachments(self, stock_code: str, disclosure_info: Optional[List[Dict]] = None) -> List[Dict]:
         """
         添付資料ファイルをダウンロード
         
@@ -704,8 +705,9 @@ class JPXScraper:
         import requests
         from urllib.parse import urlparse
         
-        # 適時開示情報を取得
-        disclosure_info = self.fetch_disclosure_documents(stock_code)
+        # 適時開示情報を取得（渡されていない場合のみ取得）
+        if disclosure_info is None:
+            disclosure_info = self.fetch_disclosure_documents(stock_code)
         
         # 添付資料URLが存在するもののみフィルタ
         attachment_docs = []
@@ -919,12 +921,12 @@ class JPXScraper:
                 for download_type in download_types:
                     try:
                         if download_type == 'xbrl':
-                            # HTML/添付と同様の体感を揃えるため、XBRLは内部で開示情報を再取得させる
-                            results = self.download_xbrl_files(None, f"downloads/xbrl/{stock_code}", stock_code)
+                            # バッチで取得済みの開示情報を再利用（重複fetchを避けて安定化）
+                            results = self.download_xbrl_files(disclosure_info, f"downloads/xbrl/{stock_code}", stock_code)
                         elif download_type == 'html':
-                            results = self.download_html_summaries(stock_code)
+                            results = self.download_html_summaries(stock_code, disclosure_info=disclosure_info)
                         elif download_type == 'attachments':
-                            results = self.download_attachments(stock_code)
+                            results = self.download_attachments(stock_code, disclosure_info=disclosure_info)
                         else:
                             continue
                         
