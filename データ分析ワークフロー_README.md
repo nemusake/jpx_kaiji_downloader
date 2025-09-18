@@ -11,13 +11,15 @@
 Webサイト → HTMLダウンロード → CSV抽出 → クレンジング → データベース格納 → 分析用CSV出力
 
 step 0 : 決算短信HTMLファイルのダウンロード(codelist.csvにある銘柄を全てDLする)
-    uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments,xbrl --delay=3
+    uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments,xbrl --delay-min=2 --delay-max=5
 ↓
 step 1 : HTMLファイルからCSV抽出(DLした決算短信HTMLをまとめて時系列CSVを作成する)
     uv run python html_summary_output.py all
+    uv run python html_summary_output.py codelist
 ↓
 step 2 : 作成した時系列CSVのクレンジング(証券codeを5桁に,数を文字列→数値,数値からカンマ除去)
     uv run python html_summary_join.py cleansing
+↓
 step 3 : クレンジング済みCSVを結合出力(個別の全CSVファイルをDB蓄積用ファイル1つに統合する)
     uv run python html_summary_join.py all
 ↓
@@ -73,16 +75,14 @@ uv run python kaiji_downloader.py batch-download codelist.csv --types=html --max
 
 ### ステップ1: HTMLファイルからCSV抽出
 決算短信HTMLファイルから財務データを抽出し、個別銘柄ごとのCSVファイルを作成します。
+同名の既存CSVファイルがある場合は上書きします。
 
 ```bash
 # 全銘柄を一括処理（推奨）
 uv run python html_summary_output.py all
 
-# テスト用に最初の10銘柄のみ処理
-uv run python html_summary_output.py all limit=10
-
-# 特定の証券コードのみ処理
-uv run python html_summary_output.py 13010
+# プロジェクト直下に置いてあるcodelist.csvのみ処理
+uv run python html_summary_output.py codelist
 ```
 
 **入力**: `downloads/html_summary/[証券コード]/`内のHTMLファイル  

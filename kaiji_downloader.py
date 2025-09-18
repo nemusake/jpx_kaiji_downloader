@@ -9,13 +9,13 @@
 実行コマンド使用例
 
     # 例1: 全1,681社のHTMLと添付資料を収集（推定20時間程度）
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --delay=3
+        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --delay-min=2 --delay-max=5
 
     # 例2: 最初の100社のHTMLと添付資料をテスト収集
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --max=100 --delay=2
+        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --max=100 --delay-min=2 --delay-max=5
 
     # 例3: 500行目から再開してHTMLと添付資料を収集
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --resume=500 --delay=3
+        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --resume=500 --delay-min=2 --delay-max=5
 
 
 実行コマンド一覧
@@ -23,35 +23,11 @@
 codelist.csvから取得する場合
 
     # 1. XBRLのみ高速収集
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=xbrl --delay=1
+        uv run python kaiji_downloader.py batch-download codelist.csv --types=xbrl --delay-min=2 --delay-max=5
     # 2. HTMLサマリー収集
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=html --delay=2
+        uv run python kaiji_downloader.py batch-download codelist.csv --types=html --delay-min=2 --delay-max=5
     # 3. 添付資料収集
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=attachments --delay=3
-
-
-単一企業を指定する場合
-
-    # HTMLサマリーのみ
-        uv run python kaiji_downloader.py html {証券コード}
-    # 添付資料のみ
-        uv run python kaiji_downloader.py attachments {証券コード}
-    # HTMLサマリーと添付資料の両方（XBRLは除外）
-      →単一企業用の直接コマンドはないので、個別実行が必要
-        uv run python kaiji_downloader.py html {証券コード}
-        uv run python kaiji_downloader.py attachments {証券コード}
-
-
-全銘柄一括収集の場合
-
-    # HTMLサマリーと添付資料のみ一括収集
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments
-
-    # テスト実行（最初の5社のみ）
-        uv run python kaiji_downloader.py batch-download-test codelist.csv --types=html,attachments
-
-    # カスタム設定例
-        uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --max=50 --delay=2
+        uv run python kaiji_downloader.py batch-download codelist.csv --types=attachments --delay-min=2 --delay-max=5
 
 """
 
