@@ -155,12 +155,19 @@ uv run python kaiji_downloader.py batch-download codelist.csv --types=xbrl --max
 
 # 50行目から再開、HTMLサマリーと添付資料のみ
 uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments --resume=50
+
+# 企業間待機を範囲指定（jitter）で分散（例: 2〜6秒のランダム）
+uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments,xbrl --delay-min=2 --delay-max=6
 ```
 **オプション**:
 - `--types=xbrl,html,attachments`: ダウンロード種類の選択
 - `--resume=N`: N行目から再開
 - `--max=N`: 最大N社まで処理
-- `--delay=N`: 企業間の待機時間をN秒に設定
+- `--delay=N`: 企業間の待機時間をN秒に設定（固定）
+- `--delay-min=M --delay-max=N`: 企業間の待機を M〜N 秒の範囲でランダム化（jitter）。
+  - `--delay` 未指定でも使用可。指定がある場合は `delay-min/max` が優先されます。
+  - `--delay-min=3 --delay-max=3` は固定3秒（従来と同等）。
+  - `delay-min > delay-max` を指定した場合は自動で入れ替えて解釈します。
 
 ## 📁 ファイル出力仕様
 
@@ -205,8 +212,8 @@ data/
 
 ### 既存ファイル処理仕様
 種類別の挙動（実装準拠）:
-- HTMLサマリー・添付資料: 同名ファイルが存在する場合はスキップ（ファイル名で判定）
-- XBRL: 既存チェックを行わず、同名ファイルがある場合は上書き保存
+- HTMLサマリー・添付資料・XBRL: 同名ファイルが存在する場合はスキップ（ファイル名で判定）
+- 不完全ファイル（0バイト等）の場合は再ダウンロードして上書き保存
 
 #### 実際の動作例
 ```bash
@@ -222,8 +229,7 @@ data/
 #### 新しい決算情報への対応
 - **四半期決算発表時**: 新しいファイル名で保存されるため自動ダウンロード
 - **既存期間の再発行**: 
-  - HTML/添付: 同一ファイル名のためスキップ（手動削除で再取得可能）
-  - XBRL: 同一ファイル名でも上書き保存（必要に応じてバックアップ推奨）
+  - HTML/添付/XBRL: 同一ファイル名のためスキップ（再取得が必要なら手動削除してください）
 
 #### 強制再ダウンロードしたい場合
 ```bash
