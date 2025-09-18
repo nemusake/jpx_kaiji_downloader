@@ -487,6 +487,11 @@ class JPXScraper:
         xbrl_docs = [doc for doc in disclosure_docs if doc.get('xbrl_url')]
         
         print(f"\n{len(xbrl_docs)}件のXBRLファイルをダウンロード中...")
+
+        # 既存ファイルは都度チェック（per-file exists 判定）
+
+        skipped_count = 0
+        downloaded_count = 0
         
         for i, doc in enumerate(xbrl_docs, 1):
             try:
@@ -503,28 +508,47 @@ class JPXScraper:
                 filename = f"{date_formatted}_{stock_code}_{safe_title}_xbrl.zip"
                 filepath = os.path.join(download_dir, filename)
                 
-                print(f"[{i}/{len(xbrl_docs)}] ダウンロード中: {doc['title'][:50]}...")
-                
-                # XBRLファイルをダウンロード
-                response = self.session.get(xbrl_url)
-                response.raise_for_status()
-                
-                # ファイルに保存
-                with open(filepath, 'wb') as f:
-                    f.write(response.content)
-                
-                download_result = {
-                    'title': doc['title'],
-                    'date': doc['date'],
-                    'xbrl_url': xbrl_url,
-                    'local_file': filepath,
-                    'file_size': len(response.content),
-                    'status': 'success'
-                }
-                
-                download_results.append(download_result)
-                
-                print(f"  → 完了: {filename} ({len(response.content):,} bytes)")
+                # 既に同名ファイルが存在する場合はスキップ（0バイト等の不完全ファイルは除く）
+                # 進捗見出しとURLを表示（HTML/添付と同等の粒度）
+                print(f"[{i}/{len(xbrl_docs)}] {doc['title'][:50]}...")
+                print(f"  URL: {xbrl_url}")
+
+                # 同名の既存ファイルがあり、かつサイズ>0ならスキップ（スキップ時はsleepしない）
+                if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
+                    print("  → スキップ: 同名ファイルが既に存在します")
+                    download_result = {
+                        'title': doc['title'],
+                        'date': doc['date'],
+                        'xbrl_url': xbrl_url,
+                        'local_file': filepath,
+                        'file_size': os.path.getsize(filepath),
+                        'status': 'skipped'
+                    }
+                    download_results.append(download_result)
+                    skipped_count += 1
+                else:
+                    print(f"  ダウンロード中...")
+                    # XBRLファイルをダウンロード
+                    response = self.session.get(xbrl_url)
+                    response.raise_for_status()
+
+                    # ファイルに保存
+                    with open(filepath, 'wb') as f:
+                        f.write(response.content)
+
+                    download_result = {
+                        'title': doc['title'],
+                        'date': doc['date'],
+                        'xbrl_url': xbrl_url,
+                        'local_file': filepath,
+                        'file_size': len(response.content),
+                        'status': 'success'
+                    }
+                    
+                    download_results.append(download_result)
+                    
+                    print(f"  → 完了: {filename} ({len(response.content):,} bytes)")
+                    downloaded_count += 1
                 
                 # サーバーへの負荷を考慮して待機
                 if i < len(xbrl_docs):
@@ -543,8 +567,10 @@ class JPXScraper:
                 download_results.append(error_result)
                 print(f"  → エラー: {e}")
         
-        print(f"\nダウンロード完了: 成功 {sum(1 for r in download_results if r['status'] == 'success')} / {len(download_results)} 件")
-        
+        # HTML/添付と同等のサマリーログ表記に戻す
+        success_count = sum(1 for r in download_results if r['status'] == 'success')
+        print(f"\nダウンロード完了: 成功 {success_count} / {len(download_results)} 件")
+
         return download_results
     
     def download_html_summaries(self, stock_code: str) -> List[Dict]:
