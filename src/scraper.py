@@ -811,9 +811,10 @@ class JPXScraper:
         
         return download_results
     
-    def download_all_files_batch(self, codelist_csv: str = "codelist.csv", download_types: list = None, 
-                                 resume_from: int = 0, max_companies: int = None, 
-                                 delay_seconds: int = 3) -> Dict:
+    def download_all_files_batch(self, codelist_csv: str = "codelist.csv", download_types: list = None,
+                                 resume_from: int = 0, max_companies: int = None,
+                                 delay_seconds: int = 3, delay_min: float | None = None,
+                                 delay_max: float | None = None) -> Dict:
         """
         codelist.csvから全銘柄のデータを一括ダウンロード
         
@@ -838,7 +839,11 @@ class JPXScraper:
         print(f"🚀 codelist.csvから全銘柄一括ダウンロード開始")
         print(f"📋 対象ファイル: {codelist_csv}")
         print(f"📥 ダウンロード種類: {', '.join(download_types)}")
-        print(f"⏱️  企業間待機時間: {delay_seconds}秒")
+        # 待機時間の表示（範囲指定があればそれを優先）
+        if delay_min is not None and delay_max is not None:
+            print(f"⏱️  企業間待機時間: {delay_min}～{delay_max}秒（範囲指定）")
+        else:
+            print(f"⏱️  企業間待機時間: {delay_seconds}秒")
         print(f"🔄 再開位置: {resume_from}行目から")
         print("-" * 60)
         
@@ -989,8 +994,18 @@ class JPXScraper:
             
             # 待機（最後の企業以外）
             if i < len(companies):
-                print(f"  ⏳ {delay_seconds}秒待機中...")
-                time.sleep(delay_seconds)
+                # 範囲指定があれば一様乱数でjitter、なければ固定
+                actual_sleep = None
+                if delay_min is not None and delay_max is not None:
+                    import random
+                    # 下限・上限の順序は呼び出し側で正規化済みだが、念のため防御
+                    lo = min(delay_min, delay_max)
+                    hi = max(delay_min, delay_max)
+                    actual_sleep = random.uniform(lo, hi)
+                else:
+                    actual_sleep = delay_seconds
+                print(f"  ⏳ {actual_sleep:.1f}秒待機中...")
+                time.sleep(actual_sleep)
         
         # 処理完了
         batch_results['end_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

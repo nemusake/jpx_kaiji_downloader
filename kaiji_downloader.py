@@ -180,9 +180,15 @@ def test_single_company(stock_code: str = "9984", debug: bool = False, fetch_dis
         return False
 
 
-def batch_download_all(csv_file: str = "codelist.csv", download_types: list = None, 
-                      resume_from: int = 0, max_companies: int = None, 
-                      delay_seconds: int = 3):
+def batch_download_all(
+    csv_file: str = "codelist.csv",
+    download_types: list = None,
+    resume_from: int = 0,
+    max_companies: int = None,
+    delay_seconds: int = 3,
+    delay_min: int | None = None,
+    delay_max: int | None = None,
+):
     """
     codelist.csvから全銘柄のデータを一括ダウンロード
     
@@ -206,7 +212,9 @@ def batch_download_all(csv_file: str = "codelist.csv", download_types: list = No
         download_types=download_types,
         resume_from=resume_from,
         max_companies=max_companies,
-        delay_seconds=delay_seconds
+        delay_seconds=delay_seconds,
+        delay_min=delay_min,
+        delay_max=delay_max,
     )
     
     return results
@@ -331,6 +339,8 @@ if __name__ == "__main__":
         resume_from = 0
         max_companies = None
         delay_seconds = 3
+        delay_min = None
+        delay_max = None
         
         # コマンドライン引数の解析
         for i, arg in enumerate(sys.argv[3:], 3):
@@ -343,8 +353,32 @@ if __name__ == "__main__":
                 max_companies = int(arg.split("=")[1])
             elif arg.startswith("--delay="):
                 delay_seconds = int(arg.split("=")[1])
-        
-        batch_download_all(csv_file, download_types, resume_from, max_companies, delay_seconds)
+            elif arg.startswith("--delay-min="):
+                delay_min = float(arg.split("=")[1])
+            elif arg.startswith("--delay-max="):
+                delay_max = float(arg.split("=")[1])
+        # 範囲指定の正規化
+        if delay_min is None and delay_max is None:
+            # 旧オプション(--delay)のみ指定時は固定待機
+            delay_min = delay_seconds
+            delay_max = delay_seconds
+        elif delay_min is None:
+            delay_min = delay_max
+        elif delay_max is None:
+            delay_max = delay_min
+        # 入力が逆の場合は入れ替え
+        if delay_min > delay_max:
+            delay_min, delay_max = delay_max, delay_min
+
+        batch_download_all(
+            csv_file,
+            download_types,
+            resume_from,
+            max_companies,
+            delay_seconds,
+            delay_min,
+            delay_max,
+        )
     elif len(sys.argv) > 1 and sys.argv[1] == "batch-download-test":
         # テスト用：最初の5社のみ処理
         csv_file = sys.argv[2] if len(sys.argv) > 2 else "codelist.csv"
