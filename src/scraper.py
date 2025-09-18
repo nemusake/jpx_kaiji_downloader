@@ -463,12 +463,12 @@ class JPXScraper:
         
         return disclosure_list
     
-    def download_xbrl_files(self, disclosure_docs: List[Dict], download_dir: str = "downloads/xbrl", stock_code: str = "") -> List[Dict]:
+    def download_xbrl_files(self, disclosure_docs: Optional[List[Dict]] = None, download_dir: str = "downloads/xbrl", stock_code: str = "") -> List[Dict]:
         """
         XBRL ファイルをダウンロード
         
         Args:
-            disclosure_docs: 開示情報のリスト
+            disclosure_docs: 開示情報のリスト（None の場合は内部で再取得）
             download_dir: ダウンロード先ディレクトリ
             stock_code: 証券コード（ファイル名生成用）
             
@@ -477,12 +477,16 @@ class JPXScraper:
         """
         import os
         from urllib.parse import urlparse
-        
+
         # ダウンロード先ディレクトリを作成
         os.makedirs(download_dir, exist_ok=True)
-        
+
         download_results = []
-        
+
+        # HTML/添付と同様の体感に合わせるため、必要に応じてここで開示情報を再取得
+        if disclosure_docs is None:
+            disclosure_docs = self.fetch_disclosure_documents(stock_code)
+
         # XBRLがある開示情報のみを処理
         xbrl_docs = [doc for doc in disclosure_docs if doc.get('xbrl_url')]
         
@@ -551,8 +555,8 @@ class JPXScraper:
                     downloaded_count += 1
                 
                 # サーバーへの負荷を考慮して待機
-                if i < len(xbrl_docs):
-                    time.sleep(1)
+                # 注意: スキップ時は待機しない。ダウンロード成功時のみ待機する。
+                # そのため、待機はダウンロード成功ブロック（else）内で実施する。
                     
             except Exception as e:
                 error_result = {
@@ -915,7 +919,8 @@ class JPXScraper:
                 for download_type in download_types:
                     try:
                         if download_type == 'xbrl':
-                            results = self.download_xbrl_files(disclosure_info, f"downloads/xbrl/{stock_code}", stock_code)
+                            # HTML/添付と同様の体感を揃えるため、XBRLは内部で開示情報を再取得させる
+                            results = self.download_xbrl_files(None, f"downloads/xbrl/{stock_code}", stock_code)
                         elif download_type == 'html':
                             results = self.download_html_summaries(stock_code)
                         elif download_type == 'attachments':
