@@ -55,8 +55,8 @@ batch_download_reportファイルを検索中...
 ```
 選択されたファイル: batch_download_report_20250912_175054.json
 JSONファイルを読み込み中...
-  ✓ 14330: 企業名 (成功ファイル数: 1)
-  ✓ 14360: 企業名 (成功ファイル数: 1)
+  ✓ 14330: 企業名 (成功ファイル数: 3 | html: 1, attachments: 1, xbrl: 1)
+  ✓ 14360: 企業名 (成功ファイル数: 1 | html: 0, attachments: 0, xbrl: 1)
   ...
 
 集計結果:
@@ -91,9 +91,12 @@ uv run python batch_download_report_check.py data/report.json output/success_lis
 
 ### 5.1 出力ファイルの形式
 CSVファイルには以下の項目が含まれます：
-- **stock_code**: 証券コード
-- **company_name**: 企業名
-- **success_files**: ダウンロードに成功したファイル数
+- `stock_code`: 証券コード
+- `company_name`: 企業名
+- `success_files`: 成功したダウンロードファイルの総数（html/attachments/xbrlの合計）
+- `html_success`: HTMLサマリの成功件数
+- `attachments_success`: 添付資料の成功件数
+- `xbrl_success`: XBRLファイルの成功件数
 
 ### 5.2 Excelでの開き方
 1. 生成されたCSVファイルをダブルクリック
@@ -106,6 +109,7 @@ CSVファイルには以下の項目が含まれます：
 
 補足:
 - 対話式モードは `data/batch_download_report_*.json` を対象に検索します。別ディレクトリにあるJSONを処理したい場合は、直接指定モードでパスを渡してください。
+ - ログに表示される「成功ファイル数: n | html: a, attachments: b, xbrl: c」は、JSONの `downloads.{type}.success` をそのまま集計した値です。
 
 ## 6. トラブルシューティング
 

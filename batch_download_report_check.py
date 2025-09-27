@@ -33,6 +33,11 @@ def extract_successful_stocks(json_file_path, output_csv_path):
     for result in data.get('results', []):
         total_count += 1
         success_files = result.get('success_files', 0)
+        # 種別別の成功数（存在しない場合は0）
+        downloads = result.get('downloads', {}) or {}
+        html_success = (downloads.get('html', {}) or {}).get('success', 0)
+        attachments_success = (downloads.get('attachments', {}) or {}).get('success', 0)
+        xbrl_success = (downloads.get('xbrl', {}) or {}).get('success', 0)
         
         if success_files >= 1:
             stock_code = result.get('stock_code', '')
@@ -40,10 +45,16 @@ def extract_successful_stocks(json_file_path, output_csv_path):
             successful_stocks.append({
                 'stock_code': stock_code,
                 'company_name': company_name,
-                'success_files': success_files
+                'success_files': success_files,
+                'html_success': html_success,
+                'attachments_success': attachments_success,
+                'xbrl_success': xbrl_success
             })
             success_count += 1
-            print(f"  ✓ {stock_code}: {company_name} (成功ファイル数: {success_files})")
+            print(
+                f"  ✓ {stock_code}: {company_name} (成功ファイル数: {success_files} | "
+                f"html: {html_success}, attachments: {attachments_success}, xbrl: {xbrl_success})"
+            )
     
     print(f"\n集計結果:")
     print(f"  総企業数: {total_count}")
@@ -56,7 +67,14 @@ def extract_successful_stocks(json_file_path, output_csv_path):
     with open(output_csv_path, 'w', encoding='utf-8-sig', newline='') as f:
         if successful_stocks:
             # CSVヘッダーと行を書き込み
-            fieldnames = ['stock_code', 'company_name', 'success_files']
+            fieldnames = [
+                'stock_code',
+                'company_name',
+                'success_files',
+                'html_success',
+                'attachments_success',
+                'xbrl_success',
+            ]
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(successful_stocks)
@@ -64,7 +82,14 @@ def extract_successful_stocks(json_file_path, output_csv_path):
         else:
             # データがない場合もヘッダーだけ出力
             writer = csv.writer(f)
-            writer.writerow(['stock_code', 'company_name', 'success_files'])
+            writer.writerow([
+                'stock_code',
+                'company_name',
+                'success_files',
+                'html_success',
+                'attachments_success',
+                'xbrl_success',
+            ])
             print("  成功したデータが見つかりませんでした")
     
     return successful_stocks

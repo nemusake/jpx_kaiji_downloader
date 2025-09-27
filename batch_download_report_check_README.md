@@ -1,12 +1,13 @@
 # batch_download_report_check.py
 
 ## 概要
-`kaiji_downloader.py`で生成されたダウンロードレポート（JSONファイル）から、ダウンロードに成功した企業のstock_codeを抽出し、UTF-8 BOM付きCSVファイルとして出力するツールです。
+`kaiji_downloader.py`で生成されたダウンロードレポート（JSONファイル）から、ダウンロードに成功した企業のstock_codeを抽出し、UTF-8 BOM付きCSVファイルとして出力するツールです。成功ファイル総数（success_files）に加えて、種別別の成功件数（html_success / attachments_success / xbrl_success）も出力します。
 
 ## 主な機能
 - batch_download_reportのJSONファイルから成功企業を自動抽出
 - 対話式でファイル選択が可能
 - UTF-8 BOM付きCSVで出力（Excelでの文字化けを防止）
+- 種別別成功件数（HTML / 添付 / XBRL）の列を追加出力
 - Python標準ライブラリのみで動作（追加インストール不要）
 
 ## 必要要件
@@ -39,7 +40,10 @@ uv run python batch_download_report_check.py input.json output.csv
 ### CSVファイルの内容
 - `stock_code`: 証券コード
 - `company_name`: 企業名
-- `success_files`: 成功したダウンロード数
+- `success_files`: 成功したダウンロードファイルの総数（html/attachments/xbrlの合計）
+- `html_success`: HTMLサマリの成功件数
+- `attachments_success`: 添付資料の成功件数
+- `xbrl_success`: XBRLファイルの成功件数
 
 ### ファイル形式
 - UTF-8エンコーディング（BOM付き）
@@ -78,8 +82,8 @@ batch_download_reportファイルを検索中...
 
 選択されたファイル: batch_download_report_20250912_175054.json
 JSONファイルを読み込み中: data/batch_download_report_20250912_175054.json
-  ✓ 14330: 企業A (成功ファイル数: 1)
-  ✓ 14360: 企業B (成功ファイル数: 1)
+  ✓ 14330: 企業A (成功ファイル数: 3 | html: 1, attachments: 1, xbrl: 1)
+  ✓ 14360: 企業B (成功ファイル数: 1 | html: 0, attachments: 0, xbrl: 1)
   ...
 
 集計結果:
@@ -113,3 +117,6 @@ Claude (Anthropic)
   - 対話式ファイル選択機能追加
   - UTF-8 BOM付きCSV出力対応
   - 標準ライブラリのみで実装
+ - 2025-09-27: 出力列を拡張
+   - `html_success`, `attachments_success`, `xbrl_success` をCSVに追加
+   - ログ出力に種別別の成功件数内訳を表示

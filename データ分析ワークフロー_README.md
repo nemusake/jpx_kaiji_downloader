@@ -24,11 +24,13 @@ step 3 : クレンジング済みCSVを結合出力(個別の全CSVファイル�
     uv run python html_summary_join.py all
 ↓
 step 4 : SQLiteデータベースへ格納(html_summary.csvをhtml_summary.dbにインポートする)
+    古いhtml_summary.csvを削除
     html_summary_all.csvをhtml_summary.csvに名称変更
     cd output
     uv run python import_html_summary.py
 ↓
 step 5 : 分析用データ出力(データベースから修正決算を除去した分析用のクリーンなCSVを出力する)
+    古いexport_html_summary_output.csvを削除
     cd output
     uv run python export_html_summary_query.py
 ```
