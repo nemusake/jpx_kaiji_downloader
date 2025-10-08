@@ -11,7 +11,7 @@
 Webサイト → HTMLダウンロード → CSV抽出 → クレンジング → データベース格納 → 分析用CSV出力
 
 step 0 : 決算短信HTMLファイルのダウンロード(codelist.csvにある銘柄を全てDLする)
-    uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments,xbrl --delay-min=2 --delay-max=5
+    uv run python kaiji_downloader.py batch-download codelist.csv --types=html,attachments,xbrl --delay-min=1 --delay-max=3
 ↓
 step 1 : HTMLファイルからCSV抽出(DLした決算短信HTMLをまとめて時系列CSVを作成する)
     uv run python html_summary_output.py all
